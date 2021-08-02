@@ -1,0 +1,296 @@
+// 賢賢的CSS
+
+.nav-item {
+  width: 13.5%;
+  margin: 0 12px;
+
+  &__expansion,
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    margin: 1.25rem 0 1.25rem 3px;
+    border-bottom: 2px solid transparent;
+    color: #00779f;
+  }
+}
+
+.navigation {
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    list-style: none;
+    font-size: 12px;
+  }
+
+  &__logo-area span {
+    margin-left: 8px;
+    font-size: 36px;
+    color: #00779f;
+  }
+
+  &__logo-area {
+    display: flex;
+    align-items: baseline;
+    margin-left: 10%;
+  }
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+
+.main {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.text-theme-color {
+  color: #365d82;
+}
+
+
+.app__footer {
+  margin-top: 6rem;
+  background-color: #00779f;
+}
+
+.footer {
+  min-height: 40vh;
+}
+
+// 賢賢的CSS--END
+
+
+
+// Guideline Variables
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+
+h1,
+p {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+$theme-color:#00779F;
+
+@mixin article-title {
+  font-size: 2.25rem;
+}
+
+@mixin article-subtitle {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+@mixin primary-section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@mixin secondary-section-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+@mixin primary-text {
+  font-size: 1.125rem;
+}
+
+@mixin secondary-text {
+  font-size: 0.875rem;
+}
+
+@mixin important-hint {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+@mixin hint {
+  font-size: 0.75rem;
+}
+
+@mixin card {
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 2px 2px 25px rgb(0 128 171 / 16%);
+  transition: -webkit-transform .1s ease-in;
+  transition: transform .1s ease-in;
+}
+
+
+.hero {
+  &__text {
+    color: $theme-color;
+
+    >h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    >p {
+      @include secondary-text;
+    }
+  }
+
+  &__image {
+    >img {
+      width: 100%;
+    }
+  }
+}
+
+.down-arrow {
+  justify-content: center;
+  display: flex;
+}
+
+.invstigators {
+
+  >.title {
+    @include article-title;
+    font-weight: bold;
+    color: $theme-color;
+  }
+
+  >.list {
+    .item {
+      img {
+        //   Logo比例不一遂統一高度
+        height: 300px;
+        width: 100%;
+        object-fit: contain;
+        background-color: #f3f3f3;
+        padding: 20px;
+        position: relative;
+        bottom: -40px;
+        z-index: -1;
+        border-radius: 12px;
+      }
+
+      .motto-card {
+        @include card;
+
+        .quote {
+          width: fit-content;
+        }
+
+        .motto {
+          @include primary-section-title;
+          color: $theme-color;
+        }
+      }
+
+      .intro-card {
+        @include card;
+        color: $theme-color;
+
+        .title {
+          @include secondary-section-title;
+        }
+
+        .award {
+          @include primary-text;
+        }
+
+        .company {
+          @include secondary-text;
+        }
+      }
+    }
+  }
+}
+
+.operation-flow {
+  >.title {
+    @include article-title;
+    font-weight: bold;
+    color: $theme-color;
+  }
+
+  .step-flow {
+    .card-list {
+      .step-card {
+        color: $theme-color;
+
+        >.image {
+          @include card;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        >.title {
+          @include article-title;
+          color: $theme-color;
+        }
+
+        >.description {
+          @include secondary-text;
+          color: $theme-color;
+        }
+      }
+      .space-adjuster {
+          height: 250px;
+      }
+      .space-adjuster2 {
+          height: 150px;
+      }
+    }
+  }
+}
+
+.description {
+  height: 200px;
+
+  .line-curve-left {
+    height: 100px;
+    width: 100px;
+    border-radius: 0px 0px 0px 100px;
+    border-left: solid 2px #00779F;
+    border-bottom: solid 2px #00779F;
+
+    .step-point {
+      border: solid 8px #00779F;
+      background-color: white;
+      height: 30px;
+      width: 30px;
+      border-radius: 100px;
+      position: relative;
+      right: 15px;
+      bottom: 15px;
+    }
+  }
+
+  .line-curve-middle {
+    border-bottom: solid 2px #00779F;
+    height: 100px;
+  }
+
+  .line-curve-right {
+    height: 102px;
+    width: 100px;
+    border-radius: 0px 100px 0px 0px;
+    border-right: solid 2px #00779F;
+    border-top: solid 2px #00779F;
+
+    .step-point {
+      border: solid 8px #00779F;
+      background-color: white;
+      height: 30px;
+      width: 30px;
+      border-radius: 100px;
+      position: relative;
+      left: 15px;
+      top: 15px;
+    }
+  }
+}
