@@ -1,0 +1,196 @@
+// 賢賢的CSS
+
+.nav-item {
+  width: 13.5%;
+  margin: 0 12px;
+
+  &__expansion,
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    margin: 1.25rem 0 1.25rem 3px;
+    border-bottom: 2px solid transparent;
+    color: #00779f;
+  }
+}
+
+.navigation {
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    list-style: none;
+    font-size: 12px;
+  }
+
+  &__logo-area span {
+    margin-left: 8px;
+    font-size: 36px;
+    color: #00779f;
+  }
+
+  &__logo-area {
+    display: flex;
+    align-items: baseline;
+    margin-left: 10%;
+  }
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+// 由於需要處理bg-color，所以不用.main
+// .main {
+//   margin-left: 3rem;
+//   margin-right: 3rem;
+// }
+
+.text-theme-color {
+  color: #365d82;
+}
+
+
+.app__footer {
+  margin-top: 6rem;
+  background-color: #00779f;
+}
+
+.footer {
+  min-height: 40vh;
+}
+
+// 賢賢的CSS--END
+
+
+
+// Guideline Variables
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+
+h1,
+p {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+$theme-color:#00779F;
+
+@mixin article-title {
+  font-size: 2.25rem;
+}
+
+@mixin article-subtitle {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+@mixin primary-section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@mixin secondary-section-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+@mixin primary-text {
+  font-size: 1.125rem;
+}
+
+@mixin secondary-text {
+  font-size: 0.875rem;
+}
+
+@mixin important-hint {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+// Custom Variables
+
+@mixin hint {
+  font-size: 0.75rem;
+}
+
+@mixin card {
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 2px 2px 25px rgb(0 128 171 / 16%);
+  transition: -webkit-transform .1s ease-in;
+  transition: transform .1s ease-in;
+}
+
+@mixin giant-text {
+  font-size: 4rem;
+}
+
+// shared classes
+
+.description {
+  height: 200px;
+}
+
+.bg {
+  &_gray {
+    background-color: #F5F5F5;
+  }
+}
+
+.title {
+  @include article-title;
+  font-weight: bold;
+  color: $theme-color;
+}
+
+.subtitle {
+  @include primary-section-title;
+  font-weight: bold;
+  color: $theme-color;
+}
+
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.investigators-button {
+  color: white;
+  background-color: #00779F;
+  padding: 6px 8px;
+  text-decoration: none;
+
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  border: 0;
+
+  &:hover {
+    color: white;
+    box-shadow: 0 6px 13px 0 rgb(0 128 171 / 40%);
+    background-color: #00779F;
+  }
+}
+
+// sections
+
+.hero {
+  background-image: url('/assets/introduction-hero/hero-cover.png');
+  background-size: cover;
+  background-position: center;
+  .question-card {
+      @include card;
+      box-shadow: none;
+  }
+}

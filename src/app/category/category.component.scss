@@ -113,6 +113,8 @@ $theme-color:#00779F;
   font-weight: bold;
 }
 
+// Custom Variables
+
 @mixin hint {
   font-size: 0.75rem;
 }
@@ -125,36 +127,89 @@ $theme-color:#00779F;
   transition: transform .1s ease-in;
 }
 
+@mixin giant-text {
+  font-size: 4rem;
+}
+
+// shared classes
+
+.description {
+  height: 200px;
+}
+
+.bg {
+  &_gray {
+    background-color: #F5F5F5;
+  }
+}
+
+.title {
+  @include article-title;
+  font-weight: bold;
+  color: $theme-color;
+}
+
+.subtitle {
+  @include primary-section-title;
+  font-weight: bold;
+  color: $theme-color;
+}
+
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.investigators-button {
+  color: white;
+  background-color: #00779F;
+  padding: 6px 8px;
+  text-decoration: none;
+
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  border: 0;
+
+  &:hover {
+    color: white;
+    box-shadow: 0 6px 13px 0 rgb(0 128 171 / 40%);
+    background-color: #00779F;
+  }
+}
+
+// sections
 
 .hero {
   &__text {
     color: $theme-color;
 
-    >h1 {
-      font-size: 3rem;
+    >.title {
+      @include giant-text;
       font-weight: bold;
     }
 
-    >p {
+    >.description {
       @include secondary-text;
     }
   }
 
   &__image {
     >img {
-      width: 100%;
+      max-height: 80vh;
+      object-fit: contain;
     }
   }
 }
 
-.down-arrow {
-  justify-content: center;
-  display: flex;
-}
-
 .invstigators {
   >.list {
-    .item {
+    >.item {
       img {
         //   Logo比例不一遂統一高度
         height: 300px;
@@ -171,7 +226,7 @@ $theme-color:#00779F;
       .motto-card {
         @include card;
 
-        .quote {
+        .quote-sign {
           width: fit-content;
         }
 
@@ -202,111 +257,38 @@ $theme-color:#00779F;
 }
 
 .operation-flow {
-  .step-flow {
-    .card-list {
-      .step-card {
-        color: $theme-color;
+  color: $theme-color;
 
-        >.image {
-          @include card;
+  .image-card {
+    @include card;
+  }
 
-          img {
-            width: 100%;
-          }
-        }
+  .title {
+    @include article-title;
+    color: $theme-color;
+  }
 
-        >.title {
-          @include article-title;
-          color: $theme-color;
-        }
-
-        >.description {
-          @include secondary-text;
-          color: $theme-color;
-        }
-      }
-
-      .space-adjuster {
-        height: 250px;
-      }
-
-      .space-adjuster2 {
-        height: 150px;
-      }
-    }
+  .description {
+    @include secondary-text;
+    color: $theme-color;
   }
 }
 
-.description {
-  height: 200px;
-
-  .line-curve-left {
-    height: 100px;
-    width: 100px;
-    border-radius: 0px 0px 0px 100px;
-    border-left: solid 2px #00779F;
-    border-bottom: solid 2px #00779F;
-
-    .step-point {
-      border: solid 8px #00779F;
-      background-color: white;
-      height: 30px;
-      width: 30px;
-      border-radius: 100px;
-      position: relative;
-      right: 15px;
-      bottom: 15px;
-    }
-  }
-
-  .line-curve-middle {
-    border-bottom: solid 2px #00779F;
-    height: 100px;
-  }
-
-  .line-curve-right {
-    height: 102px;
-    width: 100px;
-    border-radius: 0px 100px 0px 0px;
-    border-right: solid 2px #00779F;
-    border-top: solid 2px #00779F;
-
-    .step-point {
-      border: solid 8px #00779F;
-      background-color: white;
-      height: 30px;
-      width: 30px;
-      border-radius: 100px;
-      position: relative;
-      left: 15px;
-      top: 15px;
-    }
-  }
-}
-
-.bg {
-  &_gray {
-    background-color: #F5F5F5;
-    padding-top: 3rem;
-  }
-}
 
 .qualification {
+  color: $theme-color;
   .icon-card {
     @include card;
-
-    img {
-      width: 100%;
-    }
   }
 
-  .text-container {
+  .text-card {
     @include card;
     box-shadow: none;
-    color: $theme-color;
+
     .qualification-header {
       @include primary-section-title;
     }
+
     .application-number {
       @include article-title;
       font-style: italic;
@@ -315,14 +297,16 @@ $theme-color:#00779F;
 
 }
 
-.title {
-  @include article-title;
-  font-weight: bold;
+.boost-business {
   color: $theme-color;
-}
 
-.subtitle {
-  @include primary-section-title;
-  font-weight: bold;
-  color: $theme-color;
+  .title {
+    font-weight: initial;
+    @include giant-text;
+  }
+
+  .cta {
+    color: white;
+    background-color: #00779F;
+  }
 }
