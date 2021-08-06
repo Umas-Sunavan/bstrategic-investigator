@@ -46,11 +46,11 @@ a:hover {
   text-decoration: none;
 }
 
-
-.main {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
+// 由於需要處理bg-color，所以不用.main
+// .main {
+//   margin-left: 3rem;
+//   margin-right: 3rem;
+// }
 
 .text-theme-color {
   color: #365d82;
@@ -153,13 +153,6 @@ $theme-color:#00779F;
 }
 
 .invstigators {
-
-  >.title {
-    @include article-title;
-    font-weight: bold;
-    color: $theme-color;
-  }
-
   >.list {
     .item {
       img {
@@ -209,12 +202,6 @@ $theme-color:#00779F;
 }
 
 .operation-flow {
-  >.title {
-    @include article-title;
-    font-weight: bold;
-    color: $theme-color;
-  }
-
   .step-flow {
     .card-list {
       .step-card {
@@ -238,16 +225,14 @@ $theme-color:#00779F;
           color: $theme-color;
         }
       }
-      .space-adjuster {
-          height: 250px;
-      }
-      .space-adjuster2 {
-          height: 150px;
-      }
-    }
 
-    .card-list-right {
-      // margin-top: 25%;
+      .space-adjuster {
+        height: 250px;
+      }
+
+      .space-adjuster2 {
+        height: 150px;
+      }
     }
   }
 }
@@ -297,4 +282,47 @@ $theme-color:#00779F;
       top: 15px;
     }
   }
+}
+
+.bg {
+  &_gray {
+    background-color: #F5F5F5;
+    padding-top: 3rem;
+  }
+}
+
+.qualification {
+  .icon-card {
+    @include card;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .text-container {
+    @include card;
+    box-shadow: none;
+    color: $theme-color;
+    .qualification-header {
+      @include primary-section-title;
+    }
+    .application-number {
+      @include article-title;
+      font-style: italic;
+    }
+  }
+
+}
+
+.title {
+  @include article-title;
+  font-weight: bold;
+  color: $theme-color;
+}
+
+.subtitle {
+  @include primary-section-title;
+  font-weight: bold;
+  color: $theme-color;
 }
