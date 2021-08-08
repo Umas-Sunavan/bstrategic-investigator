@@ -80,6 +80,7 @@ p {
 }
 
 $theme-color:#00779F;
+$secondary-color: #7d828e;
 
 @mixin article-title {
   font-size: 2.25rem;
@@ -160,6 +161,10 @@ section {
   padding-bottom: 4rem;
 }
 
+p {
+  @include primary-text;
+}
+
 .investigators-button {
   color: white;
   background-color: #00779F;
@@ -189,8 +194,153 @@ section {
   background-image: url('/assets/introduction-hero/hero-cover.png');
   background-size: cover;
   background-position: center;
+
   .question-card {
-      @include card;
-      box-shadow: none;
+    @include card;
+    box-shadow: none;
+  }
+}
+
+.suitable-investigator {
+  color: $theme-color;
+
+  .icon-card {
+    @include card;
+    box-shadow: none;
+  }
+
+  .title {
+    @include article-title;
+    font-weight: normal
+  }
+}
+
+
+.investigator-compare {
+  color: $secondary-color;
+
+  .title {
+    @include article-title;
+    font-weight: normal;
+  }
+
+  .strategy-investigator-card {
+    background-color: #203352;
+    color: #F1F6EC;
+    border-radius: 2rem;
+  }
+
+  .financial-investigator-card {
+    background-color: #F1F6EC;
+    color: #203352;
+    border-radius: 2rem;
+  }
+
+  .badge {
+    position: absolute;
+    right: 20%;
+    background-color: #4C5E8C;
+    color: #F2E8DE;
+    border-radius: 1rem;
+  }
+
+  .compare-card {
+    @include card;
+    box-shadow: none;
+
+    &:hover {
+      background-color: #00779F;
+      color: #FFF;
+
+      .strategic-text, .financial-text {
+        color: #FFF;
+      }
+
+      .vertical-line {
+        background-color: #FFF;
+      }
+    }
+  }
+
+  .vertical-line {
+    height: inherit;
+    width: 1px;
+    background-color: $secondary-color;
+  }
+
+  .strategic-text {
+    color: $theme-color;
+  }
+
+  .financial-text {
+    color: $secondary-color;
+  }
+
+  small {
+    @include secondary-text;
+  }
+}
+
+.features {
+  color: $theme-color;
+
+  .feature-number {
+    width: 8rem;
+  }
+
+  .title {
+    @include article-title;
+  }
+
+  h1 {
+    position: absolute;
+    font-size: 4rem;
+  }
+}
+
+.categories {
+  color: $theme-color;
+
+  .category-card {
+    @include card;
+
+    &:hover {
+      color: white;
+      box-shadow: 0 6px 13px 0 rgb(0 128 171 / 40%);
+      // background-color: #00779F;
+    }
+  }
+
+  .subtitle {
+    @include primary-text;
+  }
+
+  .title {
+    @include article-title;
+  }
+
+  .category-list {
+    .title {
+      @include primary-section-title;
+    }
+  }
+}
+
+.footer {
+  small {
+    @include secondary-text;
+    font-weight: normal;
+    color: #FFF;
+  }
+
+  a {
+    display: block;
+    color: white;
+    text-decoration: underline;
+    @include primary-text;
+  }
+  
+  .relative-link-list {
+    @include secondary-text;
   }
 }

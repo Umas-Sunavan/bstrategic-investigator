@@ -264,7 +264,7 @@ section {
   }
 
   .title {
-    @include article-title;
+    @include primary-section-title;
     color: $theme-color;
   }
 
