@@ -42,7 +42,6 @@
               "node_modules/jquery/dist/jquery.js"
             ]
           },
-          "rebaseRootRelativeCssUrls": true,
           "configurations": {
             "production": {
               "fileReplacements": [
