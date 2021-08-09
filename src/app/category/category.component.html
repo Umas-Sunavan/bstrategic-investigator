@@ -317,9 +317,9 @@
             <div class="col-6 d-none d-lg-block">
                 <div class="description row align-items-start">
                     <picture>
-                        <source class="w-100" srcset="/assets/operation-flow-diagram/flow-xl.svg" media="(min-width: 1400px)">
-                        <source class="w-100" srcset="/assets/operation-flow-diagram/flow-l.svg" media="(min-width: 1200px)">
-                        <source class="w-100" srcset="/assets/operation-flow-diagram/flow-m.svg" media="(min-width: 992px)">
+                        <source class="w-100" [srcset]="convertPath('/assets/operation-flow-diagram/flow-xl.svg')" media="(min-width: 1400px)">
+                        <source class="w-100" [srcset]="convertPath('/assets/operation-flow-diagram/flow-l.svg')" media="(min-width: 1200px)">
+                        <source class="w-100" [srcset]="convertPath('/assets/operation-flow-diagram/flow-m.svg')" media="(min-width: 992px)">
                         <img class="w-100" [src]="convertPath('/assets/operation-flow-diagram/test6-as-m.svg')">
                     </picture>
                 </div>
