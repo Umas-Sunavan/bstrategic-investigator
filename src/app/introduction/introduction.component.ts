@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
@@ -9,7 +10,8 @@ import { ActivatedRoute } from '@angular/router';
 export class IntroductionComponent implements OnInit {
 
   constructor(
-    private activatedRoute:ActivatedRoute
+    private activatedRoute:ActivatedRoute,
+    private location:Location,
   ) { }
 
   categories = [
@@ -59,6 +61,8 @@ export class IntroductionComponent implements OnInit {
   ]
 
   categoryMap = new Map()
+
+  convertPath = (relavieLink:string) =>  this.location.prepareExternalUrl(relavieLink)
 
   ngOnInit(): void {
     const pathParam:string = this.activatedRoute.snapshot.paramMap.get('categoryName') || ''
