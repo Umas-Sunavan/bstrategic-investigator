@@ -9,7 +9,7 @@ const routes: Routes = [
     component: IntroductionComponent
   },
   {
-    path: 'category',
+    path: 'category/:categoryName',
     component: CategoryComponent
   },
 ];

@@ -68,8 +68,6 @@ a:hover {
 
 // 賢賢的CSS--END
 
-
-
 // Guideline Variables
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
@@ -145,7 +143,6 @@ $theme-color:#00779F;
 
 .title {
   @include article-title;
-  font-weight: bold;
   color: $theme-color;
 }
 
@@ -158,6 +155,9 @@ $theme-color:#00779F;
 section {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  color: $theme-color;
 }
 
 .investigators-button {
@@ -187,7 +187,6 @@ section {
 
 .hero {
   &__text {
-    color: $theme-color;
 
     >.title {
       @include giant-text;
@@ -199,12 +198,10 @@ section {
     }
   }
 
-  &__image {
-    >img {
+  img {
       max-height: 80vh;
       object-fit: contain;
     }
-  }
 }
 
 .invstigators {
@@ -232,16 +229,15 @@ section {
 
         .motto {
           @include primary-section-title;
-          color: $theme-color;
         }
       }
 
       .intro-card {
         @include card;
-        color: $theme-color;
 
         .title {
           @include secondary-section-title;
+          font-weight: bold;
         }
 
         .award {
@@ -257,7 +253,6 @@ section {
 }
 
 .operation-flow {
-  color: $theme-color;
 
   .image-card {
     @include card;
@@ -265,18 +260,16 @@ section {
 
   .title {
     @include primary-section-title;
-    color: $theme-color;
+    font-weight: bold;
   }
 
   .description {
     @include secondary-text;
-    color: $theme-color;
   }
 }
 
 
 .qualification {
-  color: $theme-color;
   .icon-card {
     @include card;
   }
@@ -298,10 +291,8 @@ section {
 }
 
 .boost-business {
-  color: $theme-color;
 
   .title {
-    font-weight: initial;
     @include giant-text;
   }
 
