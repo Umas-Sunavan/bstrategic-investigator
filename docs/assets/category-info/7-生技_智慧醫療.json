@@ -1,0 +1,44 @@
+{
+  "id": "biotechnology",  
+      "name": "生技/智慧醫療",
+      "description": "生技醫療組成員橫跨製藥、醫療器材、食品生技及再生醫療等領域。隨著生物科技快速發展，製藥、再生醫療也跨入了醫療器材領域，如生物活性分子已應用在結合生物材料的醫材科技，或是結合細胞、藥物而成的新一代複合醫材，此種藉由相互結合來增加醫材功能或藥效性，已逐漸成為醫材科技新趨勢。複合醫材的研發成果不斷創新，也讓不少藥廠、生技公司投入該領域進行研發，搶攻市場商機。",
+      "heroImagePath": "/assets/category-icons/IC半導體_主視覺.png",
+      "investigators": [
+        {
+          "quote":"行善的企業盡社會責任，是我們的使命！",
+          "name":"徐煥清",
+          "award":"第28屆青年創業楷模得獎人",
+          "title":"泰宗生物科技(股)公司/董事長",
+          "imagePath":"/assets/logos/7.生技_智慧醫療/31.png",
+          "link":"www.tcmbio.com"
+        },{
+          "quote":"「三心二意」的服務理念，「愛心」、「關心」、「耐心」，用「誠意」獲得顧客最大的「滿意」。",
+          "name":"陳麗如",
+          "award":"第29屆青年創業楷模得獎人",
+          "title":"杏一醫療用品(股)公司/董事長",
+          "imagePath":"/assets/logos/7.生技_智慧醫療/32.png",
+          "link":"www.medfirst.com.tw"
+        },{
+          "quote":"誠正精新、造福人群。",
+          "name":"陳威仁",
+          "award":"第42屆青年創業楷模得獎人",
+          "title":"生展生物科技(股)公司/董事長",
+          "imagePath":"/assets/logos/7.生技_智慧醫療/33.png",
+          "link":"www.syngen.com.tw"
+        },{
+          "quote":"看得清晰、看得舒適、看到未來。",
+          "name":"林丕容",
+          "award":"第30屆青年創業楷模得獎人",
+          "title":"大學光學科技股份有限公司/總裁",
+          "imagePath":"/assets/logos/7.生技_智慧醫療/34.png",
+          "link":"www.eyecenter.com.tw"
+        },{
+          "quote":"以最先端的科研技術打造能改善消費者生活的高效能產品。",
+          "name":"林詠翔",
+          "award":"第35屆青年創業楷模得獎人",
+          "title":"大江生醫(股)公司/董事長",
+          "imagePath":"/assets/logos/7.生技_智慧醫療/35.png",
+          "link":"www.tci-bio.com"
+        }
+      ]
+    }

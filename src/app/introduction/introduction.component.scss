@@ -188,10 +188,15 @@ p {
   }
 }
 
+.app {
+  scroll-behavior:smooth;
+}
+
 // sections
 
 .hero {
-  background-image: url('~src/assets/introduction-hero/hero-cover.png');
+  // background-image: url('~src/assets/introduction-hero/hero-cover.png');
+  background-image: url('~src/assets/introduction-hero/introduction-hero-xl.png');
   background-size: cover;
   background-position: center;
 

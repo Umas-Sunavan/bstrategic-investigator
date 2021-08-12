@@ -1,0 +1,44 @@
+{
+  "id": "new-service",
+      "name": "創新服務/雲端",
+      "description": "創新服務組所關注議題包括金融科技、雲端平台服務及各領域新興的智慧化應用。",
+      "heroImagePath": "/assets/category-icons/IC半導體_主視覺.png",
+      "investigators": [
+        {
+          "quote":"全方位'one stop shopping'國際運輸物流",
+          "name":"許旭輝",
+          "award":"第25屆青年創業楷模得獎人",
+          "title":"台灣空運國際物流集團/董事長",
+          "imagePath":"/assets/logos/9.創新服務_雲端/41.png",
+          "link":"www.tec-logistics.com"
+        },{
+          "quote":"創造最高的客戶滿意度為全員目標！",
+          "name":"蕭漢平",
+          "award":"第37屆青年創業楷模得獎人",
+          "title":"旺德電通(股)公司/總經理",
+          "imagePath":"/assets/logos/9.創新服務_雲端/42.png",
+          "link":"https://www.wonder.tw/wonder/"
+        },{
+          "quote":"一杯咖啡，夢想成真。",
+          "name":"王國雄",
+          "award":"第29屆青年創業楷模得獎人",
+          "title":"成真社會企業電(有)公司/董事長",
+          "imagePath":"/assets/logos/9.創新服務_雲端/43.png",
+          "link":"www.wangsteak.com.tw"
+        },{
+          "quote":"IT市場瞬息萬變，必須時刻提升自己與企業的綜合競爭力，才能立於不敗之地。",
+          "name":"游素冠",
+          "award":"第32屆青年創業楷模得獎人",
+          "title":"矽瑪科技(股)公司/董事長",
+          "imagePath":"/assets/logos/9.創新服務_雲端/44.png",
+          "link":"https://simulatechnology.com/"
+        },{
+          "quote":"溫度與深度的創新體驗，與您「共」創價值與美「好」！「成為全球性之創新服務策略夥伴」為長期發展願景。",
+          "name":"黃士軍",
+          "award":"第38屆青年創業楷模得獎人",
+          "title":"程曦資訊整合(股)公司/董事長",
+          "imagePath":"/assets/logos/9.創新服務_雲端/45.png",
+          "link":"www.chainsea.com.tw"
+        }
+      ]
+    }

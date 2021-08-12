@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { CategoryComponent } from './category/category.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [

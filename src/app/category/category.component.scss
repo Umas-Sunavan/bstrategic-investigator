@@ -131,10 +131,6 @@ $theme-color:#00779F;
 
 // shared classes
 
-.description {
-  height: 200px;
-}
-
 .bg {
   &_gray {
     background-color: #F5F5F5;
@@ -265,6 +261,7 @@ section {
 
   .description {
     @include secondary-text;
+    height: 200px;
   }
 }
 
@@ -293,11 +290,40 @@ section {
 .boost-business {
 
   .title {
-    @include giant-text;
+    @include article-title;
   }
 
   .cta {
     color: white;
     background-color: #00779F;
+  }
+}
+
+.any-question {
+  .email-card {
+    @include card;
+    box-shadow: none;
+  }
+
+  .title {
+    @include article-title;
+  }
+}
+.footer {
+  small {
+    @include secondary-text;
+    font-weight: normal;
+    color: #FFF;
+  }
+
+  a {
+    display: block;
+    color: white;
+    text-decoration: underline;
+    @include primary-text;
+  }
+  
+  .relative-link-list {
+    @include secondary-text;
   }
 }

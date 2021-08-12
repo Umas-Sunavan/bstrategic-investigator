@@ -1,4 +1,4 @@
-<div class="app__nav container-fluid">
+<!-- <div class="app__nav container-fluid">
     <div class="container">
         <div class="justify-content-between row">
             <div class="col-md-3 col-6">
@@ -117,11 +117,16 @@
     </div>
 </div>
 <div class="app__main">
-    <section class="hero container" id="hero">
+    <section class="hero container">
         <div class="d-flex align-items-center row">
             <div class="hero__text col-4">
-                <h1 class="title">{{categoryInfo.name}}</h1>
-                <p class="description">{{categoryInfo.description}}
+                <h1 class="title">印刷電路板</h1>
+                <p class="description">台灣電子產業發展至今已將近四十年歷史,
+                    從1970年間政府全力主導半導體技術引進,
+                    以及早期推動PC組裝和周邊零組件標準化,衍生出完電子產業生態鏈,
+                    在產業高度聚效應推動,已在全球電子產業站穩關鍵
+                    性地位,並累積堅強OEM/ODM研與製實力。
+                    台電子產業在全球CT的供應鏈體系中,表現極為亮眼,
                 </p>
             </div>
             <div class="col-8">
@@ -129,25 +134,22 @@
             </div>
         </div>
         <div class="w-100 d-flex justify-content-center">
-            <a [href]="'/category/' + categoryInfo.id + '#invstigators'">
-                <svg class="align-items-center" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                        stroke="#00779F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M8 12L12 16L16 12" stroke="#00779F" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path d="M12 8V16" stroke="#00779F" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-            </a>
+            <svg class="align-items-center" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="#00779F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M8 12L12 16L16 12" stroke="#00779F" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M12 8V16" stroke="#00779F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
         </div>
     </section>
-    <section id="invstigators" class="invstigators container">
+    <section class="invstigators container">
         <h1 class="title">本組投資召集人</h1>
         <div class="list row">
-            <div class="item col-6 p-3" *ngFor="let investigator of categoryInfo.investigators">
-                <img class="p-5" [src]="convertPath(investigator.imagePath)">
+            <div class="item col-6 p-3">
+                <img class="p-5" [src]="convertPath('/assets/logos/1.IC半導體_PCB/1.png')">
                 <div class="motto-card p-4 m-3">
                     <div class="quote-sign me-auto"><svg width="26" height="23" viewBox="0 0 26 23" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -155,7 +157,7 @@
                                 d="M0.511875 14.2812C0.511875 10.1562 1.07438 7.1875 2.19938 5.375C3.38688 3.5625 5.38688 1.96875 8.19938 0.59375L11.6681 5.1875C9.41813 6.375 8.04313 7.40625 7.54313 8.28125C7.10563 9.09375 6.88688 10.125 6.88688 11.375H11.7619V22.625H0.511875V14.2812ZM14.1056 14.2812C14.1056 10.1562 14.6681 7.1875 15.7931 5.375C16.9181 3.5625 18.9181 1.96875 21.7931 0.59375L25.1681 5.1875C22.9806 6.375 21.6369 7.40625 21.1369 8.28125C20.6369 9.09375 20.3869 10.125 20.3869 11.375H25.2619V22.625H14.1056V14.2812Z"
                                 fill="#006F95" />
                         </svg></div>
-                    <p class="motto col text-center m-0">{{investigator.quote}}</p>
+                    <p class="motto col text-center m-0">Just ask questions</p>
                     <div class="quote-sign ms-auto"><svg width="26" height="23" viewBox="0 0 26 23" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -164,9 +166,101 @@
                         </svg></div>
                 </div>
                 <div class="intro-card px-4 py-3 m-3">
-                    <p class="title m-0">{{investigator.name}}</p>
-                    <p class="award m-0">{{investigator.award}}</p>
-                    <p class="company m-0">{{investigator.title}}</p>
+                    <p class="title m-0">楊立昌</p>
+                    <p class="award m-0">第31屆青年創業楷模得獎人</p>
+                    <p class="company m-0">聚積科技(股)公司董事長</p>
+                </div>
+            </div>
+            <div class="item col-6 p-3">
+                <img class="p-5" [src]="convertPath('/assets/logos/1.IC半導體_PCB/2.png')">
+                <div class="motto-card p-4 m-3">
+                    <div class="quote me-auto"><svg width="26" height="23" viewBox="0 0 26 23" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.511875 14.2812C0.511875 10.1562 1.07438 7.1875 2.19938 5.375C3.38688 3.5625 5.38688 1.96875 8.19938 0.59375L11.6681 5.1875C9.41813 6.375 8.04313 7.40625 7.54313 8.28125C7.10563 9.09375 6.88688 10.125 6.88688 11.375H11.7619V22.625H0.511875V14.2812ZM14.1056 14.2812C14.1056 10.1562 14.6681 7.1875 15.7931 5.375C16.9181 3.5625 18.9181 1.96875 21.7931 0.59375L25.1681 5.1875C22.9806 6.375 21.6369 7.40625 21.1369 8.28125C20.6369 9.09375 20.3869 10.125 20.3869 11.375H25.2619V22.625H14.1056V14.2812Z"
+                                fill="#006F95" />
+                        </svg></div>
+                    <p class="motto col text-center m-0">Just ask questions</p>
+                    <div class="quote ms-auto"><svg width="26" height="23" viewBox="0 0 26 23" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25.7166 8.71875C25.7166 12.8437 25.1541 15.8125 24.0291 17.625C22.8416 19.4375 20.8416 21.0313 18.0291 22.4062L14.5604 17.8125C16.8104 16.625 18.1854 15.5938 18.6854 14.7187C19.1229 13.9063 19.3416 12.875 19.3416 11.625H14.4666L14.4666 0.375L25.7166 0.375L25.7166 8.71875ZM12.1229 8.71875C12.1229 12.8437 11.5604 15.8125 10.4354 17.625C9.31039 19.4375 7.31039 21.0312 4.43539 22.4062L1.06039 17.8125C3.24789 16.625 4.59164 15.5938 5.09164 14.7187C5.59164 13.9062 5.84164 12.875 5.84164 11.625H0.96664V0.375H12.1229V8.71875Z"
+                                fill="#006F95" />
+                        </svg></div>
+                </div>
+                <div class="intro-card px-4 py-3 m-3">
+                    <p class="title m-0">余維斌</p>
+                    <p class="award m-0">第31屆青年創業楷模得獎人</p>
+                    <p class="company m-0">宜特科技(股)公司/董事長</p>
+                </div>
+            </div>
+            <div class="item col-6 p-3">
+                <img class="p-5" [src]="convertPath('/assets/logos/1.IC半導體_PCB/3.png')">
+                <div class="motto-card p-4 m-3">
+                    <div class="quote me-auto"><svg width="26" height="23" viewBox="0 0 26 23" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.511875 14.2812C0.511875 10.1562 1.07438 7.1875 2.19938 5.375C3.38688 3.5625 5.38688 1.96875 8.19938 0.59375L11.6681 5.1875C9.41813 6.375 8.04313 7.40625 7.54313 8.28125C7.10563 9.09375 6.88688 10.125 6.88688 11.375H11.7619V22.625H0.511875V14.2812ZM14.1056 14.2812C14.1056 10.1562 14.6681 7.1875 15.7931 5.375C16.9181 3.5625 18.9181 1.96875 21.7931 0.59375L25.1681 5.1875C22.9806 6.375 21.6369 7.40625 21.1369 8.28125C20.6369 9.09375 20.3869 10.125 20.3869 11.375H25.2619V22.625H14.1056V14.2812Z"
+                                fill="#006F95" />
+                        </svg></div>
+                    <p class="motto col text-center m-0">Just ask questions</p>
+                    <div class="quote ms-auto"><svg width="26" height="23" viewBox="0 0 26 23" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25.7166 8.71875C25.7166 12.8437 25.1541 15.8125 24.0291 17.625C22.8416 19.4375 20.8416 21.0313 18.0291 22.4062L14.5604 17.8125C16.8104 16.625 18.1854 15.5938 18.6854 14.7187C19.1229 13.9063 19.3416 12.875 19.3416 11.625H14.4666L14.4666 0.375L25.7166 0.375L25.7166 8.71875ZM12.1229 8.71875C12.1229 12.8437 11.5604 15.8125 10.4354 17.625C9.31039 19.4375 7.31039 21.0312 4.43539 22.4062L1.06039 17.8125C3.24789 16.625 4.59164 15.5938 5.09164 14.7187C5.59164 13.9062 5.84164 12.875 5.84164 11.625H0.96664V0.375H12.1229V8.71875Z"
+                                fill="#006F95" />
+                        </svg></div>
+                </div>
+                <div class="intro-card px-4 py-3 m-3">
+                    <p class="title m-0">曾榮孟</p>
+                    <p class="award m-0">第21屆青年創業楷模得獎人</p>
+                    <p class="company m-0">希華晶體科技(股)公司/總經理</p>
+                </div>
+            </div>
+            <div class="item col-6 p-3">
+                <img class="p-5" [src]="convertPath('/assets/logos/1.IC半導體_PCB/4.png')">
+                <div class="motto-card p-4 m-3">
+                    <div class="quote me-auto"><svg width="26" height="23" viewBox="0 0 26 23" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.511875 14.2812C0.511875 10.1562 1.07438 7.1875 2.19938 5.375C3.38688 3.5625 5.38688 1.96875 8.19938 0.59375L11.6681 5.1875C9.41813 6.375 8.04313 7.40625 7.54313 8.28125C7.10563 9.09375 6.88688 10.125 6.88688 11.375H11.7619V22.625H0.511875V14.2812ZM14.1056 14.2812C14.1056 10.1562 14.6681 7.1875 15.7931 5.375C16.9181 3.5625 18.9181 1.96875 21.7931 0.59375L25.1681 5.1875C22.9806 6.375 21.6369 7.40625 21.1369 8.28125C20.6369 9.09375 20.3869 10.125 20.3869 11.375H25.2619V22.625H14.1056V14.2812Z"
+                                fill="#006F95" />
+                        </svg></div>
+                    <p class="motto col text-center m-0">Just ask questions</p>
+                    <div class="quote ms-auto"><svg width="26" height="23" viewBox="0 0 26 23" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25.7166 8.71875C25.7166 12.8437 25.1541 15.8125 24.0291 17.625C22.8416 19.4375 20.8416 21.0313 18.0291 22.4062L14.5604 17.8125C16.8104 16.625 18.1854 15.5938 18.6854 14.7187C19.1229 13.9063 19.3416 12.875 19.3416 11.625H14.4666L14.4666 0.375L25.7166 0.375L25.7166 8.71875ZM12.1229 8.71875C12.1229 12.8437 11.5604 15.8125 10.4354 17.625C9.31039 19.4375 7.31039 21.0312 4.43539 22.4062L1.06039 17.8125C3.24789 16.625 4.59164 15.5938 5.09164 14.7187C5.59164 13.9062 5.84164 12.875 5.84164 11.625H0.96664V0.375H12.1229V8.71875Z"
+                                fill="#006F95" />
+                        </svg></div>
+                </div>
+                <div class="intro-card px-4 py-3 m-3">
+                    <p class="title m-0">吳元超</p>
+                    <p class="award m-0">第36屆青年創業楷模得獎人</p>
+                    <p class="company m-0">興普科技(股)公司/董事長</p>
+                </div>
+            </div>
+            <div class="item col-6 p-3">
+                <img class="p-5" [src]="convertPath('/assets/logos/1.IC半導體_PCB/5.png')">
+                <div class="motto-card p-4 m-3">
+                    <div class="quote me-auto"><svg width="26" height="23" viewBox="0 0 26 23" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.511875 14.2812C0.511875 10.1562 1.07438 7.1875 2.19938 5.375C3.38688 3.5625 5.38688 1.96875 8.19938 0.59375L11.6681 5.1875C9.41813 6.375 8.04313 7.40625 7.54313 8.28125C7.10563 9.09375 6.88688 10.125 6.88688 11.375H11.7619V22.625H0.511875V14.2812ZM14.1056 14.2812C14.1056 10.1562 14.6681 7.1875 15.7931 5.375C16.9181 3.5625 18.9181 1.96875 21.7931 0.59375L25.1681 5.1875C22.9806 6.375 21.6369 7.40625 21.1369 8.28125C20.6369 9.09375 20.3869 10.125 20.3869 11.375H25.2619V22.625H14.1056V14.2812Z"
+                                fill="#006F95" />
+                        </svg></div>
+                    <p class="motto col text-center m-0">Just ask questions</p>
+                    <div class="quote ms-auto"><svg width="26" height="23" viewBox="0 0 26 23" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25.7166 8.71875C25.7166 12.8437 25.1541 15.8125 24.0291 17.625C22.8416 19.4375 20.8416 21.0313 18.0291 22.4062L14.5604 17.8125C16.8104 16.625 18.1854 15.5938 18.6854 14.7187C19.1229 13.9063 19.3416 12.875 19.3416 11.625H14.4666L14.4666 0.375L25.7166 0.375L25.7166 8.71875ZM12.1229 8.71875C12.1229 12.8437 11.5604 15.8125 10.4354 17.625C9.31039 19.4375 7.31039 21.0312 4.43539 22.4062L1.06039 17.8125C3.24789 16.625 4.59164 15.5938 5.09164 14.7187C5.59164 13.9062 5.84164 12.875 5.84164 11.625H0.96664V0.375H12.1229V8.71875Z"
+                                fill="#006F95" />
+                        </svg></div>
+                </div>
+                <div class="intro-card px-4 py-3 m-3">
+                    <p class="title m-0">簡榮坤</p>
+                    <p class="award m-0">第36屆青年創業楷模得獎人</p>
+                    <p class="company m-0">邑昇實業(股)公司/董事長</p>
                 </div>
             </div>
         </div>
@@ -221,14 +315,11 @@
                 </div>
             </div>
             <div class="col-6 d-none d-lg-block">
-                <div class="row align-items-start">
+                <div class="description row align-items-start">
                     <picture>
-                        <source class="w-100" [srcset]="convertPath('/assets/operation-flow-diagram/flow-xl.svg')"
-                            media="(min-width: 1400px)">
-                        <source class="w-100" [srcset]="convertPath('/assets/operation-flow-diagram/flow-l.svg')"
-                            media="(min-width: 1200px)">
-                        <source class="w-100" [srcset]="convertPath('/assets/operation-flow-diagram/flow-m.svg')"
-                            media="(min-width: 992px)">
+                        <source class="w-100" [srcset]="convertPath('/assets/operation-flow-diagram/flow-xl.svg')" media="(min-width: 1400px)">
+                        <source class="w-100" [srcset]="convertPath('/assets/operation-flow-diagram/flow-l.svg')" media="(min-width: 1200px)">
+                        <source class="w-100" [srcset]="convertPath('/assets/operation-flow-diagram/flow-m.svg')" media="(min-width: 992px)">
                         <img class="w-100" [src]="convertPath('/assets/operation-flow-diagram/test6-as-m.svg')">
                     </picture>
                 </div>
@@ -285,7 +376,7 @@
                 <div class="col-3 p-4">
                     <div class="icon-card m-2">
                         <div class="image p-5">
-                            <img class="w-100" [src]="convertPath('/assets/category-qualification-icons/不違法.png')">
+                            <img class="w-100" [src]="convertPath('/assets/operation-flow-icons/001-invest.svg')">
                         </div>
                     </div>
                     <div class="text-card p-4 mx-2 my-4">
@@ -296,29 +387,29 @@
                 <div class="col-3 p-4">
                     <div class="icon-card m-2">
                         <div class="image p-5">
-                            <img class="w-100" [src]="convertPath('/assets/category-qualification-icons/不違約.png')">
+                            <img class="w-100" [src]="convertPath('/assets/operation-flow-icons/001-invest.svg')">
                         </div>
                     </div>
                     <div class="text-card p-4 mx-2 my-4">
                         <h2 class="qualification-header">不違約</h2>
-                        <p class="m-0">最近三年有嚴重違反環境保護、勞工或食品。</p>
+                        <p class="m-0">上傳最近三年有嚴重違反環境保護、勞工或食品。</p>
                     </div>
                 </div>
                 <div class="col-3 p-4">
                     <div class="icon-card m-2">
                         <div class="image p-5">
-                            <img class="w-100" [src]="convertPath('/assets/category-qualification-icons/不欠稅.png')">
+                            <img class="w-100" [src]="convertPath('/assets/operation-flow-icons/001-invest.svg')">
                         </div>
                     </div>
                     <div class="text-card p-4 mx-2 my-4">
                         <h2 class="qualification-header">不欠稅</h2>
-                        <p class="m-0">最近三年有嚴重違反環境保護、勞工或食品。</p>
+                        <p class="m-0">上傳這兩個字放在內文</p>
                     </div>
                 </div>
                 <div class="col-3 p-4">
                     <div class="icon-card m-2">
                         <div class="image p-5">
-                            <img class="w-100" [src]="convertPath('/assets/category-qualification-icons/非外資.png')">
+                            <img class="w-100" [src]="convertPath('/assets/operation-flow-icons/001-invest.svg')">
                         </div>
                     </div>
                     <div class="text-card p-4 mx-2 my-4">
@@ -363,83 +454,47 @@
         </div>
     </section>
 
-    <section class="boost-business">
-        <div class="container">
-            <div class="row mt-5">
-                <img class="col-6 p-5" [src]="convertPath('/assets/category-boost-business-illustration.svg')">
-                <div class="col-6 p-5">
-                    <h1 class="text-end title mb-3">你準備好了嗎？</h1>
-                    <a class="d-flex align-self-stretch justify-content-end  mt-5">
-                        <button class="investigators-button w-50">
-                            立即申請
-                        </button>
-                    </a>
-                </div>
+    <section class="boost-business container">
+        <div class="row mt-5">
+            <img class="col-6 p-5" [src]="convertPath('/assets/category-boost-business-illustration.svg')">
+            <div class="col-6 p-5">
+                <h1 class="text-end title mb-3">你準備好了嗎？</h1>
+                <a class="w-75">
+                    <button class="investigators-button float-end w-75">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.75 6.625L7.5 10.375L11.25 6.625" stroke="#00779F" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                        立即申請
+                    </button>
+                </a>
             </div>
         </div>
+        <div class="mt-5 d-flex flex-column align-items-end">
+            <h1 class="text-end subtitle m-0">仍有不清楚！？</h1>
+            <p class="text-end my-2 m-0">直接來信獲得解答</p>
+            
+        <p class="text-end my-2 m-0">計畫諮詢單位：全國創新創業總會</p>
+        <p class="text-end my-2 m-0">聯絡人：謝先生</p>
+        <p class="text-end my-2 m-0">聯絡電話：02-2332-8558</p>
+        <p class="text-end my-2 m-0">Email：question@tier.org.tw</p>
+
+            </p>
+            <div class="w-50 d-flex">
+                <a class="d-flex flex-grow-1 m-2" href="mailto:name@domain.com">
+                    <button class="investigators-button w-100">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.75 6.625L7.5 10.375L11.25 6.625" stroke="#00779F" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                        來信詢問
+                    </button>
+                </a>
+            </div>
+        </div>
+
     </section>
-    <section class="any-question  bg_gray">
-        <div class="container mt-5">
-            <div class="row">
-                <img class="col-6 p-5" [src]="convertPath('/assets/category-section-illustration/question.svg')">
-                <div class="col-6 p-5 d-flex flex-column align-items-end">
-                    <h1 class="text-end title mb-3">仍有不清楚！？</h1>
-                    <p class="text-end my-2 mb-5">直接來信獲得解答</p>
-                    <div class="email-card p-5">
-                        <h1 class="title">question@tier.org.tw</h1>
-                    </div>
-                    <a class="d-flex align-self-stretch justify-content-end mt-5">
-                        <button class="investigators-button w-50">
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M3.5 4H15.5C16.325 4 17 4.675 17 5.5V14.5C17 15.325 16.325 16 15.5 16H3.5C2.675 16 2 15.325 2 14.5V5.5C2 4.675 2.675 4 3.5 4Z"
-                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M17 5.5L9.5 10.75L2 5.5" stroke="white" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                            來信詢問
-                        </button>
-                    </a>
-                    <div class="pt-5 text-end">
-                        <p class="m-0">計畫諮詢單位：全國創新創業總會</p>
-                        <p class="m-0">聯絡人：謝先生</p>
-                        <p class="m-0">聯絡電話：02-2332-8558</p>
-                        <p class="m-0">Email：question@tier.org.tw</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div> 
-<div class="app__footer container-fluid">
-    <div class="footer">
-        <div class="container">
-            <div class="row mx-5 py-5">
-                <div class="col-3 p-4 ">
-                    <h3 class="mb-1"><small>主辦單位</small></h3>
-                    <img class="w-100 mb-4" [src]="convertPath('/assets/footer/中企處LOGO_2 1.png')">
-                </div>
-                <div class="col-3 p-4">
-                    <h3 class="mb-1"><small>維護單位</small></h3>
-                    <img class="w-100 mb-4" [src]="convertPath('/assets/footer/台經院LOGO_2 2.png')">
-                </div>
-                <div class="contact-list col-3 p-4">
-                    <h3 class="mb-1"><small>聯絡我們</small></h3>
-                    <a href="/">計畫主旨</a>
-                    <a href="/">聯絡我們</a>
-                    <a href="/">服務條款及隱私說明</a>
-                </div>
-                <div class="relative-link-list col-3 p-4">
-                    <h3 class="mb-1"><small>相關網站</small></h3>
-                    <a href="/">FINDIT早期資金投資平台</a>
-                    <a href="/">女性創業飛雁計畫</a>
-                    <a href="/">服務條款及隱私說明</a>
-                    <a href="/">中小企業網路大學校</a>
-                    <a href="/">微型創業鳳凰</a>
-                    <a href="/">經濟部中小企業處</a>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
+<div class="app__footer container-fluid">
+    <div class="footer"></div>
+</div> -->
