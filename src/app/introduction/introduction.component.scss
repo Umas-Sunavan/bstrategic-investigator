@@ -1,3 +1,5 @@
+
+
 // 賢賢的CSS
 
 .nav-item {
@@ -192,9 +194,68 @@ p {
   scroll-behavior:smooth;
 }
 
+// media quiries
+
+$xlMinWidth: 1400px;
+$lMinWidth: 1200px;
+$mMinWidth: 992px;
+$sMinWidth: 501px;
+
+@function translate-media-condition($c) {
+  $condMap: (
+    "screen": "only screen",
+    "print": "only print",
+    "mdpi": "(-webkit-min-device-pixel-ratio: 1)",
+    "hdpi": "(-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 120dpi)",
+    "xhdpi": "(-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi)",
+    ">xlWidth": "(min-width: #{$xlMinWidth + 1})",
+    "<xlWidth": "(max-width: #{$xlMinWidth})", 		
+    ">lWidth": "(min-width: #{$lMinWidth + 1})",
+    "<lWidth": "(max-width: #{$lMinWidth})",
+    ">mWidth": "(min-width: #{$mMinWidth + 1})",
+    "<mWidth": "(max-width: #{$mMinWidth})",
+    ">sWidth": "(min-width: #{$sMinWidth + 1})",
+    "<sWidth": "(max-width: #{$sMinWidth})",
+  );
+  @return map-get( $condMap, $c );
+}
+
+// The mdia mixin
+@mixin media($args...) {
+  $query: "";
+  @each $arg in $args {
+    $op: "";
+    @if ( $query != "" ) {
+      $op: " and ";
+    }
+    $query: $query + $op + translate-media-condition($arg);
+  }
+  @media #{$query}  { @content; }
+}
+
 // sections
 
 .hero {
+  @include media("mdpi") {
+    background-image: url('~src/assets/introduction-hero/introduction-hero-xl.png');
+    @include media("mdpi", "<lWidth") {background-image: url('~src/assets/introduction-hero/introduction-hero-l.png');};
+    @include media("mdpi", "<mWidth") {background-image: url('~src/assets/introduction-hero/introduction-hero-m.png');};
+    @include media("mdpi", "<sWidth") {background-image: url('~src/assets/introduction-hero/introduction-hero-s.png');};
+  };
+  
+  @include media("hdpi") {
+    background-image: url('~src/assets/introduction-hero/introduction-hero-xl@1.5x.png');
+    @include media("hdpi", "<lWidth") {background-image: url('~src/assets/introduction-hero/introduction-hero-l@1.5x.png');};
+    @include media("hdpi", "<mWidth") {background-image: url('~src/assets/introduction-hero/introduction-hero-m@1.5x.png');};
+    @include media("hdpi", "<sWidth") {background-image: url('~src/assets/introduction-hero/introduction-hero-s@1.5x.png');};
+  };
+
+  @include media("xhdpi") {
+    background-image: url('~src/assets/introduction-hero/introduction-hero-xl@2x.png');
+    @include media("xhdpi", "<lWidth") {background-image: url('~src/assets/introduction-hero/introduction-hero-l@2x.png');};
+    @include media("xhdpi", "<mWidth") {background-image: url('~src/assets/introduction-hero/introduction-hero-m@2x.png');};
+    @include media("xhdpi", "<sWidth") {background-image: url('~src/assets/introduction-hero/introduction-hero-s@2x.png');};
+  };
   // background-image: url('~src/assets/introduction-hero/hero-cover.png');
   background-image: url('~src/assets/introduction-hero/introduction-hero-xl.png');
   background-size: cover;
@@ -202,7 +263,51 @@ p {
 
   .question-card {
     @include card;
-    box-shadow: none;
+
+    transform: translatey(0px);
+    animation: float-a-lot 6s ease-in-out infinite;
+    transition: transform .5s ease-in;
+
+    @keyframes float-a-lot {
+      0% {
+        box-shadow: 0 6px 13px 0 rgb(0 128 171 / 35%);
+        transform: translatey(0px);
+      }
+      50% {
+        box-shadow: 0 18px 13px 0 rgb(0 128 171 / 10%);
+        transform: translatey(-10px);
+      }
+      100% {
+        box-shadow: 0 6px 13px 0 rgb(0 128 171 / 35%);
+        transform: translatey(0px);
+      }
+    }
+
+    @keyframes float-little {
+      0% {
+        box-shadow: 0 6px 13px 0 rgb(0 128 171 / 35%);
+        transform: translatey(0px);
+      }
+      50% {
+        box-shadow: 0 12px 13px 0 rgb(0 128 171 / 10%);
+        transform: translatey(-5px);
+      }
+      100% {
+        box-shadow: 0 6px 13px 0 rgb(0 128 171 / 35%);
+        transform: translatey(0px);
+      }
+    }
+
+    &:hover {
+      color: white;
+      box-shadow: 0 6px 13px 0 rgb(0 128 171 / 40%);
+      animation: float-little 0.5s ease-in-out infinite;
+    }
+
+    p {
+      color: $theme-color !important;
+    }
+    
   }
 }
 

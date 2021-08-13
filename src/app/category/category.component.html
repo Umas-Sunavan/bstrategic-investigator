@@ -119,17 +119,17 @@
 <div class="app__main">
     <section class="hero container" id="hero">
         <div class="d-flex align-items-center row">
-            <div class="hero__text col-4">
+            <div class="hero__text col-6">
                 <h1 class="title">{{categoryInfo.name}}</h1>
                 <p class="description">{{categoryInfo.description}}
                 </p>
             </div>
-            <div class="col-8">
-                <img class="w-100" [src]="convertPath('/assets/category-icons/IC半導體_主視覺.png')" alt="IC半導體_主視覺">
+            <div class="col-6 justify-content-center d-flex">
+                <img class="w-75" [src]="convertPath(categoryInfo.heroImagePath)" alt="IC半導體_主視覺">
             </div>
         </div>
         <div class="w-100 d-flex justify-content-center">
-            <a [href]="'/category/' + categoryInfo.id + '#invstigators'">
+            <a [href]="convertPath('/category/' + categoryInfo.id + '#invstigators')">
                 <svg class="align-items-center" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -290,7 +290,7 @@
                     </div>
                     <div class="text-card p-4 mx-2 my-4">
                         <h2 class="qualification-header">不違法</h2>
-                        <p class="m-0">最近三年有嚴重違反環境保護、勞工或食品。</p>
+                        <p class="m-0">最近三年有嚴重違反環境保護、勞工或食品安全衛生相關法律或身心障礙者權益保障法之相關規定且情節重大經各中央目的事業主管機關認定之情事。</p>
                     </div>
                 </div>
                 <div class="col-3 p-4">
@@ -301,7 +301,7 @@
                     </div>
                     <div class="text-card p-4 mx-2 my-4">
                         <h2 class="qualification-header">不違約</h2>
-                        <p class="m-0">最近三年有嚴重違反環境保護、勞工或食品。</p>
+                        <p class="m-0">於5年內曾有執行政府計畫之重大違約紀錄者。有因執行政府計畫受停權處分，且其期間尚未屆滿情事。</p>
                     </div>
                 </div>
                 <div class="col-3 p-4">
@@ -312,7 +312,7 @@
                     </div>
                     <div class="text-card p-4 mx-2 my-4">
                         <h2 class="qualification-header">不欠稅</h2>
-                        <p class="m-0">最近三年有嚴重違反環境保護、勞工或食品。</p>
+                        <p class="m-0">有因執行政府計畫受停權處分，且其期間尚未屆滿情事。</p>
                     </div>
                 </div>
                 <div class="col-3 p-4">
@@ -323,40 +323,32 @@
                     </div>
                     <div class="text-card p-4 mx-2 my-4">
                         <h2 class="qualification-header">非外資</h2>
-                        <p class="m-0">最近三年有嚴重違反環境保護、勞工或食品。</p>
+                        <p class="m-0">外國營利事業在台設立之分公司。境外公司持有申請公司股份達50%以上(含)者。</p>
                     </div>
                 </div>
             </div>
             <h2 class="subtitle">該準備哪些文件？</h2>
             <div class="row">
-                <div class="col-3 p-4">
+                <div class="col-4 p-4">
                     <div class="text-card p-4">
                         <h3 class="application-number">1</h3>
-                        <h2 class="qualification-header">填表單</h2>
-                        <p class="m-0">最近三年有嚴重違反環境保護、勞工或食品。</p>
+                        <h2 class="qualification-header">完整的會員資料</h2>
+                        <p class="m-0">填寫完整的會員資料</p>
                     </div>
                 </div>
-                <div class="col-3 p-4">
+                <div class="col-4 p-4">
                     <div class="text-card p-4">
                         <h3 class="application-number">2</h3>
                         <h2 class="qualification-header">公司登記</h2>
-                        <p class="m-0">最近三年有嚴重違反環境保護、勞工或食品。</p>
+                        <p class="m-0">檢附公司登記基本資料</p>
                     </div>
                 </div>
 
-                <div class="col-3 p-4">
+                <div class="col-4 p-4">
                     <div class="text-card p-4">
                         <h3 class="application-number">3</h3>
-                        <h2 class="qualification-header">相關專利權證明（如有）</h2>
-                        <p class="m-0">最近三年有嚴重違反環境保護、勞工或食品。</p>
-                    </div>
-                </div>
-
-                <div class="col-3 p-4">
-                    <div class="text-card p-4">
-                        <h3 class="application-number">4</h3>
-                        <h2 class="qualification-header">準備簡報</h2>
-                        <p class="m-0">最近三年有嚴重違反環境保護、勞工或食品。</p>
+                        <h2 class="qualification-header">提案簡報</h2>
+                        <p class="m-0">檢附此次提案簡報</p>
                     </div>
                 </div>
             </div>

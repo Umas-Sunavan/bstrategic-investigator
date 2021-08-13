@@ -2,7 +2,7 @@
   "id": "biotechnology",  
       "name": "生技/智慧醫療",
       "description": "生技醫療組成員橫跨製藥、醫療器材、食品生技及再生醫療等領域。隨著生物科技快速發展，製藥、再生醫療也跨入了醫療器材領域，如生物活性分子已應用在結合生物材料的醫材科技，或是結合細胞、藥物而成的新一代複合醫材，此種藉由相互結合來增加醫材功能或藥效性，已逐漸成為醫材科技新趨勢。複合醫材的研發成果不斷創新，也讓不少藥廠、生技公司投入該領域進行研發，搶攻市場商機。",
-      "heroImagePath": "/assets/category-icons/IC半導體_主視覺.png",
+      "heroImagePath": "/assets/category-icons/simplified/biotechnology.png",
       "investigators": [
         {
           "quote":"行善的企業盡社會責任，是我們的使命！",

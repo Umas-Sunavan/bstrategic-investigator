@@ -2,7 +2,7 @@
   "id": "new-service",
       "name": "創新服務/雲端",
       "description": "創新服務組所關注議題包括金融科技、雲端平台服務及各領域新興的智慧化應用。",
-      "heroImagePath": "/assets/category-icons/IC半導體_主視覺.png",
+      "heroImagePath": "/assets/category-icons/simplified/newService.png",
       "investigators": [
         {
           "quote":"全方位'one stop shopping'國際運輸物流",
