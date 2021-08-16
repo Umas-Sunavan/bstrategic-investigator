@@ -380,63 +380,101 @@
                     <div class="row category-list m-4">
                         <div class="col-4 p-4">
                             <a class="category-card p-4 d-block" href="/"  [routerLink]="['category/ic']" fragment="hero">
-                                <img class="w-100 mb-4" [src]="convertPath('/assets/category-icons/simplified/IC半導體.png')">
+                                <img class="w-100 mb-4"
+                                [srcset]="
+                                convertPath('/assets/category-icons/simplified/ic.png') + ' ' + 
+                                convertPath('/assets/category-icons/simplified/ic@1.5x.png') + ' 1.5x, ' + 
+                                convertPath('/assets/category-icons/simplified/ic@2x.png')  + ' 2x'
+                                " src="convertPath('/assets/category-icons/simplified/ic.png')">
                                 <h4 class="subtitle">IC半導體</h4>
                                 <h3 class="title">PCB</h3>
                             </a>
                         </div>
                         <div class="col-4 p-4">
                             <a class="category-card p-4 d-block" href="/"  routerLink="category/e-retail" fragment="hero">
-                                <img class="w-100 mb-4" [src]="convertPath('/assets/category-icons/simplified/電子零售.png')">
+                                <img class="w-100 mb-4" 
+                                [srcset]="
+                                convertPath('/assets/category-icons/simplified/eRetail.png') + ' ' + 
+                                convertPath('/assets/category-icons/simplified/eRetail@1.5x.png') + ' 1.5x, ' + 
+                                convertPath('/assets/category-icons/simplified/eRetail@2x.png')  + ' 2x'
+                                " src="convertPath('/assets/category-icons/simplified/eRetail.png')">
                                 <h4 class="subtitle">電子零件</h4>
                                 <h3 class="title">IOT</h3>
                             </a>
                         </div>
                         <div class="col-4 p-4">
                             <a class="category-card p-4 d-block" href="/" routerLink="category/network" fragment="hero">
-                                <img class="w-100 mb-4" [src]="convertPath('/assets/category-icons/simplified/通訊網路.png')">
+                                <img class="w-100 mb-4" [srcset]="
+                                convertPath('/assets/category-icons/simplified/network.png') + ' ' + 
+                                convertPath('/assets/category-icons/simplified/network@1.5x.png') + ' 1.5x, ' + 
+                                convertPath('/assets/category-icons/simplified/network@2x.png')  + ' 2x'
+                                " src="convertPath('/assets/category-icons/simplified/network.png')">
                                 <h4 class="subtitle">通訊網路</h4>
                                 <h3 class="title">5G</h3>
                             </a>
                         </div>
                         <div class="col-4 p-4">
                             <a class="category-card p-4 d-block" href="/" routerLink="category/automobile" fragment="hero">
-                                <img class="w-100 mb-4" [src]="convertPath('/assets/category-icons/simplified/汽車.png')">
+                                <img class="w-100 mb-4" [srcset]="
+                                convertPath('/assets/category-icons/simplified/automobile.png') + ' ' + 
+                                convertPath('/assets/category-icons/simplified/automobile@1.5x.png') + ' 1.5x, ' + 
+                                convertPath('/assets/category-icons/simplified/automobile@2x.png')  + ' 2x'
+                                " src="convertPath('/assets/category-icons/simplified/automobile.png')">
                                 <h4 class="subtitle">汽車</h4>
                                 <h3 class="title">智慧交通</h3>
                             </a>
                         </div>
                         <div class="col-4 p-4">
                             <a class="category-card p-4 d-block" href="/" routerLink="category/machine" fragment="hero">
-                                <img class="w-100 mb-4" [src]="convertPath('/assets/category-icons/simplified/電機機械.png')">
+                                <img class="w-100 mb-4" [srcset]="
+                                convertPath('/assets/category-icons/simplified/machine.png') + ' ' + 
+                                convertPath('/assets/category-icons/simplified/machine@1.5x.png') + ' 1.5x, ' + 
+                                convertPath('/assets/category-icons/simplified/machine@2x.png')  + ' 2x'
+                                " src="convertPath('/assets/category-icons/simplified/machine.png')">
                                 <h4 class="subtitle">電機機械</h4>
                                 <h3 class="title">智慧製造</h3>
                             </a>
                         </div>
                         <div class="col-4 p-4">
                             <a class="category-card p-4 d-block" href="/" routerLink="category/chainstore" fragment="hero">
-                                <img class="w-100 mb-4" [src]="convertPath('/assets/category-icons/simplified/流通連鎖.png')">
+                                <img class="w-100 mb-4" [srcset]="
+                                convertPath('/assets/category-icons/simplified/chainstore.png') + ' ' + 
+                                convertPath('/assets/category-icons/simplified/chainstore@1.5x.png') + ' 1.5x, ' + 
+                                convertPath('/assets/category-icons/simplified/chainstore@2x.png')  + ' 2x'
+                                " src="convertPath('/assets/category-icons/simplified/chainstore.png')">
                                 <h4 class="subtitle">流通連鎖</h4>
                                 <h3 class="title">文創</h3>
                             </a>
                         </div>
                         <div class="col-4 p-4">
                             <a class="category-card p-4 d-block" href="/" routerLink="category/biotechnology" fragment="hero">
-                                <img class="w-100 mb-4" [src]="convertPath('/assets/category-icons/simplified/生技.png')">
+                                <img class="w-100 mb-4" [srcset]="
+                                convertPath('/assets/category-icons/simplified/biotechnology.png') + ' ' + 
+                                convertPath('/assets/category-icons/simplified/biotechnology@1.5x.png') + ' 1.5x, ' + 
+                                convertPath('/assets/category-icons/simplified/biotechnology@2x.png')  + ' 2x'
+                                " src="convertPath('/assets/category-icons/simplified/biotechnology.png')">
                                 <h4 class="subtitle">生技</h4>
                                 <h3 class="title">智慧醫療</h3>
                             </a>
                         </div>
                         <div class="col-4 p-4">
                             <a class="category-card p-4 d-block" href="/" routerLink="category/new-material" fragment="hero">
-                                <img class="w-100 mb-4" [src]="convertPath('/assets/category-icons/simplified/新進材料.png')">
+                                <img class="w-100 mb-4" [srcset]="
+                                convertPath('/assets/category-icons/simplified/newMaterial.png') + ' ' + 
+                                convertPath('/assets/category-icons/simplified/newMaterial@1.5x.png') + ' 1.5x, ' + 
+                                convertPath('/assets/category-icons/simplified/newMaterial@2x.png')  + ' 2x'
+                                " src="convertPath('/assets/category-icons/simplified/newMaterial.png')">
                                 <h4 class="subtitle">先進材料</h4>
                                 <h3 class="title">綠能</h3>
                             </a>
                         </div>
                         <div class="col-4 p-4">
                             <a class="category-card p-4 d-block" href="/" routerLink="category/new-service" fragment="hero">
-                                <img class="w-100 mb-4" [src]="convertPath('/assets/category-icons/simplified/創新服務.png')">
+                                <img class="w-100 mb-4" [srcset]="
+                                convertPath('/assets/category-icons/simplified/newService.png') + ' ' + 
+                                convertPath('/assets/category-icons/simplified/newService@1.5x.png') + ' 1.5x, ' + 
+                                convertPath('/assets/category-icons/simplified/newService@2x.png')  + ' 2x'
+                                " src="convertPath('/assets/category-icons/simplified/newService.png')">
                                 <h4 class="subtitle">創新服務</h4>
                                 <h3 class="title">雲端</h3>
                             </a>

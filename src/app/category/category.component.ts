@@ -55,6 +55,7 @@ export class CategoryComponent implements OnInit {
     const categoryName = this.activatedRoute.snapshot.paramMap.get('categoryName')
     this.categories = [ic, eRetail, network, automobile, machine, chainstore, biotechnology, newMaterial, newService]
     this.categoryInfo = this.categories.find(category => category.id === categoryName) || this.categoryInfo
+    this.categoryInfo.heroImagePath = this.categoryInfo.heroImagePath.replace('.png', '')
   }
 
   convertPath = (relavieLink: string) => this.location.prepareExternalUrl(relavieLink)

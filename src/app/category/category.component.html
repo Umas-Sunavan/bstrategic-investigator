@@ -125,7 +125,11 @@
                 </p>
             </div>
             <div class="col-6 justify-content-center d-flex">
-                <img class="w-75" [src]="convertPath(categoryInfo.heroImagePath)" alt="IC半導體_主視覺">
+                <img class="w-75" [srcset]="
+                convertPath(categoryInfo.heroImagePath + '.png') + ' ' + 
+                convertPath(categoryInfo.heroImagePath + '@1.5x.png') + ' 1.5x, ' + 
+                convertPath(categoryInfo.heroImagePath + '@2x.png')  + ' 2x'
+                " src="convertPath(categoryInfo.heroImagePath + '.png')" [alt]="categoryInfo.name">
             </div>
         </div>
         <div class="w-100 d-flex justify-content-center">
@@ -403,7 +407,7 @@
             </div>
         </div>
     </section>
-</div> 
+</div>
 <div class="app__footer container-fluid">
     <div class="footer">
         <div class="container">
