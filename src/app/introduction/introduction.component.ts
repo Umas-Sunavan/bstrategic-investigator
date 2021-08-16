@@ -64,9 +64,7 @@ export class IntroductionComponent implements OnInit {
 
   convertPath = (relavieLink:string) =>  this.location.prepareExternalUrl(relavieLink)
 
-  ngOnInit(): void {
-    const pathParam:string = this.activatedRoute.snapshot.paramMap.get('categoryName') || ''
-    
+  ngOnInit(): void {    
   }
 
 }
