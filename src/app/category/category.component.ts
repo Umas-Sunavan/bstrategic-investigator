@@ -25,7 +25,8 @@ export interface CategoryInfo {
   id: string;
   name: string;
   description: string;
-  heroImagePath: string;
+  simplifiedHeroImagePath: string;
+  complexHeroImagePath: string;
   investigators: Investigator[];
 }
 
@@ -46,7 +47,8 @@ export class CategoryComponent implements OnInit {
     id: "",
     name: "",
     description: "",
-    heroImagePath: "",
+    simplifiedHeroImagePath: "",
+    complexHeroImagePath: "",
     investigators: [],
   }
   categories: CategoryInfo[] = []
@@ -55,7 +57,10 @@ export class CategoryComponent implements OnInit {
     const categoryName = this.activatedRoute.snapshot.paramMap.get('categoryName')
     this.categories = [ic, eRetail, network, automobile, machine, chainstore, biotechnology, newMaterial, newService]
     this.categoryInfo = this.categories.find(category => category.id === categoryName) || this.categoryInfo
-    this.categoryInfo.heroImagePath = this.categoryInfo.heroImagePath.replace('.png', '')
+    this.categoryInfo.simplifiedHeroImagePath = this.categoryInfo.simplifiedHeroImagePath.replace('.png', '')
+    this.categoryInfo.complexHeroImagePath = this.categoryInfo.complexHeroImagePath.replace('.png', '')
+    // @ts-ignore
+    this.categoryInfo.description = this.categoryInfo.description.replaceAll("。", "。<br/>")
   }
 
   convertPath = (relavieLink: string) => this.location.prepareExternalUrl(relavieLink)

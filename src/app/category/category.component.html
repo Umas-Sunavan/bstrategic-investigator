@@ -119,17 +119,17 @@
 <div class="app__main cssanimation fadeIn">
     <section class="hero container" id="hero">
         <div class="d-flex align-items-center row">
-            <div class="hero__text col-6">
+            <div class="hero__text col-4">
                 <h1 class="title cssanimation leFadeIn sequence">{{categoryInfo.name}}</h1>
-                <p class="description">{{categoryInfo.description}}
+                <p class="description mt-4" [innerHTML]="categoryInfo.description">
                 </p>
             </div>
-            <div class="col-6 justify-content-center d-flex">
+            <div class="col-8 justify-content-center d-flex">
                 <img class="w-75" [srcset]="
-                convertPath(categoryInfo.heroImagePath + '.png') + ' ' + 
-                convertPath(categoryInfo.heroImagePath + '@1.5x.png') + ' 1.5x, ' + 
-                convertPath(categoryInfo.heroImagePath + '@2x.png')  + ' 2x'
-                " [src]="convertPath(categoryInfo.heroImagePath + '.png')" [alt]="categoryInfo.name">
+                convertPath(categoryInfo.complexHeroImagePath + '.png') + ' ' + 
+                convertPath(categoryInfo.complexHeroImagePath + '@1.5x.png') + ' 1.5x, ' + 
+                convertPath(categoryInfo.complexHeroImagePath + '@2x.png')  + ' 2x'
+                " [src]="convertPath(categoryInfo.complexHeroImagePath + '.png')" [alt]="categoryInfo.name">
             </div>
         </div>
         <div class="w-100 d-flex justify-content-center">

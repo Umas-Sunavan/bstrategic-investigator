@@ -256,6 +256,16 @@ $sMinWidth: 501px;
     @include media("xhdpi", "<mWidth") {background-image: url('~src/assets/introduction-hero/introduction-hero-m@2x.png');};
     @include media("xhdpi", "<sWidth") {background-image: url('~src/assets/introduction-hero/introduction-hero-s@2x.png');};
   };
+
+  .people1 {
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top: 10vh;
+    background-color: khaki;
+    background-image: url('~src/assets/introduction-hero/introduction-hero-people1-m.png');
+  }
+
   // background-image: url('~src/assets/introduction-hero/hero-cover.png');
   background-image: url('~src/assets/introduction-hero/introduction-hero-xl.png');
   background-size: cover;
