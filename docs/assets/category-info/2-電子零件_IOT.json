@@ -2,7 +2,8 @@
   "id": "e-retail",  
       "name": "電子零件/IOT",
       "description": "我國電子產品零組件產品廣泛，主要包含印刷電路板、被動元件、連接器、能源元件等。電子資訊產品發展趨勢由智慧手持裝置應用情境所主導，將由個人場域延伸至家庭及萬物聯網，衍生出新型態裝置(如穿戴式)與物聯網裝置的需求，帶動智慧電子、電路版產業鏈軟硬體創新技術需求。此外，由於物聯網不僅在於硬體開發，更重要的是解決方案，必須針對特定領域如車載、醫療照護、工廠、金融、物流、環保等進行設計，因此衍生出跨業整合與應用人才之需求。",
-      "heroImagePath": "/assets/category-icons/simplified/eRetail.png",
+      "simplifiedHeroImagePath": "/assets/category-icons/simplified/eRetail.png",
+      "complexHeroImagePath": "/assets/category-icons/complex/eRetail.png",
       "investigators": [
         {
           "quote":"永續經營、人本關懷。",

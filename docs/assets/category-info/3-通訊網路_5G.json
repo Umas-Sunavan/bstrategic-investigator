@@ -2,7 +2,8 @@
   "id": "network",  
       "name": "通訊網路/5G",
       "description": "本組含括通信網路及軟體服務兩大產業領域。通信網路產業為利用有線或無線傳輸或接受符號、信號、文字、影像、聲音與其他訊息，產業鏈上游為組成各類通訊終端之零組件供應商，下游則為各類終端應用產品之供應商。軟體服務業可區分為應用/系統軟體設計開發、系統整合服務、電子商務、資料處理服務、通路經銷等行業。隨著5G和AIOT技術進步，未來資通訊產業的軟硬整合將成趨勢。台灣是ICT產業供應鏈與製造業的重地，不管是高科技或是傳統產業的升級都需要引導軟體產業創新，結合硬體產業既有的優勢，讓台灣形成相當的產業規模。",
-      "heroImagePath": "/assets/category-icons/simplified/network.png",
+      "simplifiedHeroImagePath": "/assets/category-icons/simplified/network.png",
+      "complexHeroImagePath": "/assets/category-icons/complex/network.png",
       "investigators": [
         {
           "quote":"突破挑戰，促進經濟成長、社會人文進步與環境永續，持續創造企業永續價值。",

@@ -10,8 +10,8 @@ import { ActivatedRoute } from '@angular/router';
 export class IntroductionComponent implements OnInit {
 
   constructor(
-    private activatedRoute:ActivatedRoute,
-    private location:Location,
+    private activatedRoute: ActivatedRoute,
+    private location: Location,
   ) { }
 
   categories = [
@@ -21,40 +21,40 @@ export class IntroductionComponent implements OnInit {
       heroImagePath: '/assets/category-icons/IC半導體_主視覺.png',
       investigators: [
         {
-          quote:'Just ask questions',
-          name:'楊立昌',
-          award:'第31屆青年創業楷模得獎人',
-          title:'聚積科技(股)公司董事長',
-          imagePath:'/assets/logos/1.IC半導體_PCB/1.png',
-          link:'www.corn/dog/porn.tw'
-        },{
-          quote:'Just ask questions',
-          name:'余維斌',
-          award:'第31屆青年創業楷模得獎人',
-          title:'宜特科技(股)公司/董事長',
-          imagePath:'/assets/logos/1.IC半導體_PCB/2.png',
-          link:'www.corn/dog/porn.tw'
-        },{
-          quote:'Just ask questions',
-          name:'曾榮孟',
-          award:'第21屆青年創業楷模得獎人',
-          title:'希華晶體科技(股)公司/總經理',
-          imagePath:'/assets/logos/1.IC半導體_PCB/3.png',
-          link:'www.corn/dog/porn.tw'
-        },{
-          quote:'Just ask questions',
-          name:'吳元超',
-          award:'第36屆青年創業楷模得獎人',
-          title:'興普科技(股)公司/董事長',
-          imagePath:'/assets/logos/1.IC半導體_PCB/4.png',
-          link:'www.corn/dog/porn.tw'
-        },{
-          quote:'Just ask questions',
-          name:'簡榮坤',
-          award:'第36屆青年創業楷模得獎人',
-          title:'邑昇實業(股)公司/董事長',
-          imagePath:'/assets/logos/1.IC半導體_PCB/5.png',
-          link:'www.corn/dog/porn.tw'
+          quote: 'Just ask questions',
+          name: '楊立昌',
+          award: '第31屆青年創業楷模得獎人',
+          title: '聚積科技(股)公司董事長',
+          imagePath: '/assets/logos/1.IC半導體_PCB/1.png',
+          link: 'www.corn/dog/porn.tw'
+        }, {
+          quote: 'Just ask questions',
+          name: '余維斌',
+          award: '第31屆青年創業楷模得獎人',
+          title: '宜特科技(股)公司/董事長',
+          imagePath: '/assets/logos/1.IC半導體_PCB/2.png',
+          link: 'www.corn/dog/porn.tw'
+        }, {
+          quote: 'Just ask questions',
+          name: '曾榮孟',
+          award: '第21屆青年創業楷模得獎人',
+          title: '希華晶體科技(股)公司/總經理',
+          imagePath: '/assets/logos/1.IC半導體_PCB/3.png',
+          link: 'www.corn/dog/porn.tw'
+        }, {
+          quote: 'Just ask questions',
+          name: '吳元超',
+          award: '第36屆青年創業楷模得獎人',
+          title: '興普科技(股)公司/董事長',
+          imagePath: '/assets/logos/1.IC半導體_PCB/4.png',
+          link: 'www.corn/dog/porn.tw'
+        }, {
+          quote: 'Just ask questions',
+          name: '簡榮坤',
+          award: '第36屆青年創業楷模得獎人',
+          title: '邑昇實業(股)公司/董事長',
+          imagePath: '/assets/logos/1.IC半導體_PCB/5.png',
+          link: 'www.corn/dog/porn.tw'
         },
       ]
     }
@@ -62,9 +62,36 @@ export class IntroductionComponent implements OnInit {
 
   categoryMap = new Map()
 
-  convertPath = (relavieLink:string) =>  this.location.prepareExternalUrl(relavieLink)
+  convertPath = (relavieLink: string) => this.location.prepareExternalUrl(relavieLink)
 
-  ngOnInit(): void {    
+  ngOnInit(): void {
+    const people3 = document.querySelector(".people3")
+    const allPeople = document.querySelectorAll(".people")
+    const ship = document.querySelector(".ship")
+    if (people3 !== null) {
+      people3.addEventListener('mouseover',(event)=>{
+        allPeople.forEach( eachPeople => {
+          console.log(eachPeople);
+          // @ts-ignore
+          eachPeople.style.opacity="0.4"
+          // @ts-ignore
+          ship.style.opacity="0.4"
+          // @ts-ignore
+          people3.style.opacity="1"
+        })
+      })
+      people3.addEventListener('mouseleave',(event)=>{
+        allPeople.forEach( eachPeople => {
+          console.log(eachPeople);
+          // @ts-ignore
+          eachPeople.style.opacity="1"
+          // @ts-ignore
+          ship.style.opacity="1"
+        })
+      })
+    }
+    // document.getElementsByClassName("people")[0].addEventListener()
+
   }
 
 }
