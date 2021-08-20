@@ -307,6 +307,11 @@ $sMinWidth: 501px;
     // @include media("xhdpi", "<sWidth") {background-image: url('~src/assets/introduction-hero/introduction-hero-s@2x.png');};
   };
 
+  .list {
+    position: relative;
+    z-index: 3;
+  }
+
   .ship {
     width: 100%;
     background-size: cover;
@@ -318,51 +323,81 @@ $sMinWidth: 501px;
     pointer-events: none;
   }
 
-  .people {
+  *[class*="sailor_"] {
     position: absolute;
     transform: translate(-50%, 50%);
     pointer-events: all;
-    &:hover ~ img {
-      mix-blend-mode: luminosity;
+  }
+  .sailor {
+    &_what-is {
+      top: calc(50% + -220px);
+      left: calc(50% - 230px);
+      z-index: 0;
+    }
+    &_investigator-compare {
+      top: calc(50% + -85px);
+      left: calc(50% - 140px);
+      z-index: 0;
+    }
+    &_features {   
+      top: calc(50% + -55px);
+      left: calc(50% - -120px);
+      z-index: 2;
+    }
+    &_categories {
+      top: calc(50% + -370px);
+      left: calc(50% - 0px);
+      z-index: 2;
+    }
+    &_suitable-investigator {
+      top: calc(50% + -125px);
+      left: calc(50% + 240px);
+      z-index: 2;
     }
   }
 
-  .people1 {
-    top: calc(50% + -220px);
-    left: calc(50% - 230px);
-    z-index: 0;
-  }
-
-  .people2 {
-    top: calc(50% + -85px);
-    left: calc(50% - 140px);
-    z-index: 0;
-  }
-
-  .people3 {   
-    top: calc(50% + -55px);
-    left: calc(50% - -120px);
-    z-index: 2;
-  }
-
-  .people4 {
-    top: calc(50% + -370px);
-    left: calc(50% - 0px);
-    z-index: 2;
-    
-  }
-
-  .people5 {
-    top: calc(50% + -125px);
-    left: calc(50% + 240px);
-    z-index: 2;
-  }
-
-  .list {
-    position: relative;
+  *[class*="question__"] {
+    transform: translate(-50%, -50%);
     z-index: 3;
   }
 
+  .question {
+    &__what-is {
+      left: calc(50% - 350px);
+      top: calc(50% - 170px);
+      .question-card {
+      border-radius: 20px 20px 0px 20px;
+      }
+    }
+    &__investigator-compare {
+      left: calc(50% + 10px);
+      top: calc(50% - 70px);
+      .question-card {
+      border-radius: 20px 20px 20px 0px;
+      }
+    }
+    &__features {    
+      left: calc(50% - 60px);
+      top: calc(50% + 130px);
+      .question-card {
+      border-radius: 20px 0px 20px 20px;
+      }
+    }
+    &__categories {
+      left: calc(50% + 340px);
+      top: calc(50% + 90px);
+      .question-card {
+      border-radius: 0px 20px 20px 20px;
+      }
+    }
+    &__suitable-investigator {
+      left: calc(50% - 150px);
+      top: calc(50% - 220px);
+      .question-card {
+      border-radius: 20px 0px 20px 20px;
+      }
+    }
+  }
   
 
   // background-image: url('~src/assets/introduction-hero/hero-cover.png');
