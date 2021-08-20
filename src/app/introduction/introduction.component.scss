@@ -286,31 +286,6 @@ $sMinWidth: 501px;
 .hero {
   position: relative;
   height: 80vh;
-  @include media("mdpi") {
-    // background-image: url('~src/assets/introduction-hero/introduction-hero-xl.png');
-    // @include media("mdpi", "<lWidth") {background-image: url('~src/assets/introduction-hero/introduction-hero-l.png');};
-    // @include media("mdpi", "<mWidth") {background-image: url('~src/assets/introduction-hero/introduction-hero-m.png');};
-    // @include media("mdpi", "<sWidth") {background-image: url('~src/assets/introduction-hero/introduction-hero-s.png');};
-  };
-  
-  @include media("hdpi") {
-    // background-image: url('~src/assets/introduction-hero/introduction-hero-xl@1.5x.png');
-    // @include media("hdpi", "<lWidth") {background-image: url('~src/assets/introduction-hero/introduction-hero-l@1.5x.png');};
-    // @include media("hdpi", "<mWidth") {background-image: url('~src/assets/introduction-hero/introduction-hero-m@1.5x.png');};
-    // @include media("hdpi", "<sWidth") {background-image: url('~src/assets/introduction-hero/introduction-hero-s@1.5x.png');};
-  };
-
-  @include media("xhdpi") {
-    // background-image: url('~src/assets/introduction-hero/introduction-hero-xl@2x.png');
-    // @include media("xhdpi", "<lWidth") {background-image: url('~src/assets/introduction-hero/introduction-hero-l@2x.png');};
-    // @include media("xhdpi", "<mWidth") {background-image: url('~src/assets/introduction-hero/introduction-hero-m@2x.png');};
-    // @include media("xhdpi", "<sWidth") {background-image: url('~src/assets/introduction-hero/introduction-hero-s@2x.png');};
-  };
-
-  .list {
-    position: relative;
-    z-index: 3;
-  }
 
   .ship {
     width: 100%;
@@ -329,68 +304,69 @@ $sMinWidth: 501px;
     pointer-events: all;
   }
   .sailor {
-    &_what-is {
+    &_definition {
       top: calc(50% + -220px);
       left: calc(50% - 230px);
       z-index: 0;
     }
-    &_investigator-compare {
+    &_comparison {
       top: calc(50% + -85px);
       left: calc(50% - 140px);
       z-index: 0;
     }
-    &_features {   
+    &_benefit {   
       top: calc(50% + -55px);
       left: calc(50% - -120px);
       z-index: 2;
     }
     &_categories {
-      top: calc(50% + -370px);
-      left: calc(50% - 0px);
-      z-index: 2;
-    }
-    &_suitable-investigator {
       top: calc(50% + -125px);
       left: calc(50% + 240px);
       z-index: 2;
     }
+    &_suitable {
+      top: calc(50% + -370px);
+      left: calc(50% - 0px);
+      z-index: 2;
+    }
   }
 
-  *[class*="question__"] {
+  *[class*="link_"] {
     transform: translate(-50%, -50%);
     z-index: 3;
+    position: absolute;
   }
 
-  .question {
-    &__what-is {
+  .link {
+    &_definition {
       left: calc(50% - 350px);
       top: calc(50% - 170px);
       .question-card {
       border-radius: 20px 20px 0px 20px;
       }
     }
-    &__investigator-compare {
+    &_comparison {
       left: calc(50% + 10px);
       top: calc(50% - 70px);
       .question-card {
       border-radius: 20px 20px 20px 0px;
       }
     }
-    &__features {    
+    &_benefit {    
       left: calc(50% - 60px);
       top: calc(50% + 130px);
       .question-card {
       border-radius: 20px 0px 20px 20px;
       }
     }
-    &__categories {
+    &_categories {
       left: calc(50% + 340px);
       top: calc(50% + 90px);
       .question-card {
       border-radius: 0px 20px 20px 20px;
       }
     }
-    &__suitable-investigator {
+    &_suitable {
       left: calc(50% - 150px);
       top: calc(50% - 220px);
       .question-card {
@@ -455,7 +431,7 @@ $sMinWidth: 501px;
   }
 }
 
-.suitable-investigator {
+.suitable, .definition {
   color: $theme-color;
 
   .icon-card {
@@ -470,7 +446,7 @@ $sMinWidth: 501px;
 }
 
 
-.investigator-compare {
+.comparison {
   color: $secondary-color;
 
   .title {
@@ -535,7 +511,7 @@ $sMinWidth: 501px;
   }
 }
 
-.features {
+.benefit {
   color: $theme-color;
 
   .feature-number {

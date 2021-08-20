@@ -124,97 +124,13 @@
     </div>
     <div class="app__main cssanimation fadeIn">
         <section class="  bg_gray">
-            <img class="mx-auto d-block" [src]="convertPath('/assets/introduction-hero/hero-title.png')">
+            <img class="mx-auto d-block" [srcset]="
+            convertPath('/assets/introduction-hero/introduction-title.png') + ' 1x,' + 
+            convertPath('/assets/introduction-hero/introduction-title@1.5x.png') + ' 1.5x, ' + 
+            convertPath('/assets/introduction-hero/introduction-title@2x.png')  + ' 2x'"
+            [src]="convertPath('/assets/introduction-hero/hero-title.png')">
             <div class="hero">
-                <div class="container list">
-                    <!-- <div class="d-flex p-5">
-                        <div class="d-flex flex-column col align-items-start">
-                            <a href="#what-is" class="d-flex mb-4">
-                                <div class="question-card d-flex p-3 flex-column">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
-                                            stroke="#00779F" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path
-                                            d="M6.81754 6.74994C6.99386 6.24869 7.3419 5.82602 7.8 5.55679C8.2581 5.28756 8.79671 5.18914 9.32042 5.27897C9.84413 5.3688 10.3191 5.64108 10.6613 6.04758C11.0035 6.45409 11.1908 6.96858 11.19 7.49994C11.19 8.99994 8.94003 9.74994 8.94003 9.74994"
-                                            stroke="#00779F" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M9 12.75H9.0075" stroke="#00779F" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                    <p class="m-0 pt-1 cssanimation leFadeIn sequence">何謂策略性投資人?</p>
-                                </div>
-                            </a>
-                            <a href="#investigator-compare" class="d-flex mb-4">
-                                <div class="question-card d-flex p-3 flex-column">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
-                                            stroke="#00779F" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path
-                                            d="M6.81754 6.74994C6.99386 6.24869 7.3419 5.82602 7.8 5.55679C8.2581 5.28756 8.79671 5.18914 9.32042 5.27897C9.84413 5.3688 10.3191 5.64108 10.6613 6.04758C11.0035 6.45409 11.1908 6.96858 11.19 7.49994C11.19 8.99994 8.94003 9.74994 8.94003 9.74994"
-                                            stroke="#00779F" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M9 12.75H9.0075" stroke="#00779F" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                    <p class="m-0 pt-1 cssanimation leFadeIn sequence">跟財務性投資人的差別在哪?</p>
-                                </div>
-                            </a>
-                            <a href="#features" class="d-flex mb-4">
-                                <div class="question-card d-flex p-3 flex-column">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
-                                            stroke="#00779F" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path
-                                            d="M6.81754 6.74994C6.99386 6.24869 7.3419 5.82602 7.8 5.55679C8.2581 5.28756 8.79671 5.18914 9.32042 5.27897C9.84413 5.3688 10.3191 5.64108 10.6613 6.04758C11.0035 6.45409 11.1908 6.96858 11.19 7.49994C11.19 8.99994 8.94003 9.74994 8.94003 9.74994"
-                                            stroke="#00779F" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M9 12.75H9.0075" stroke="#00779F" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                    <p class="m-0 pt-1 cssanimation leFadeIn sequence">策略性投資人可以提供怎樣的幫助呢?</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="d-flex flex-column col align-items-end justify-content-end">
-                            <a href="#categories" class="d-flex mb-4">
-                                <div class="question-card d-flex p-3 flex-column">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
-                                            stroke="#00779F" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path
-                                            d="M6.81754 6.74994C6.99386 6.24869 7.3419 5.82602 7.8 5.55679C8.2581 5.28756 8.79671 5.18914 9.32042 5.27897C9.84413 5.3688 10.3191 5.64108 10.6613 6.04758C11.0035 6.45409 11.1908 6.96858 11.19 7.49994C11.19 8.99994 8.94003 9.74994 8.94003 9.74994"
-                                            stroke="#00779F" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M9 12.75H9.0075" stroke="#00779F" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                    <p class="m-0 pt-1 cssanimation leFadeIn sequence">策略性投資委員會？</p>
-                                </div>
-                            </a>
-                            <a href="#suitable-investigator" class="d-flex mb-4">
-                                <div class="question-card d-flex p-3 flex-column">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
-                                            stroke="#00779F" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path
-                                            d="M6.81754 6.74994C6.99386 6.24869 7.3419 5.82602 7.8 5.55679C8.2581 5.28756 8.79671 5.18914 9.32042 5.27897C9.84413 5.3688 10.3191 5.64108 10.6613 6.04758C11.0035 6.45409 11.1908 6.96858 11.19 7.49994C11.19 8.99994 8.94003 9.74994 8.94003 9.74994"
-                                            stroke="#00779F" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M9 12.75H9.0075" stroke="#00779F" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                    <p class="m-0 pt-1 cssanimation leFadeIn sequence">我適合找策略性投資人嗎?</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div> -->
-                </div>
-                <picture>
+                <picture class="title-image">
                     <source [srcset]="
                     convertPath('/assets/introduction-hero/introduction-hero-xl.png') + ' 1x,' + 
                     convertPath('/assets/introduction-hero/introduction-hero-xl@1.5x.png') + ' 1.5x, ' + 
@@ -228,37 +144,12 @@
                     <img class="ship" [src]="convertPath('/assets/introduction-hero/introduction-hero-m@2x.png')"
                         alt="categoryInfo.name">
                 </picture>
-                <img onclick="alert('click event occurred')" class="sailor_what-is d-none d-sm-block"
-                    [src]="convertPath('/assets/introduction-hero/introduction-hero-people1-m@2x.png')" [srcset]="
-                convertPath('/assets/introduction-hero/introduction-hero-people1-m.png') + ' , ' + 
-                convertPath('/assets/introduction-hero/introduction-hero-people1-m@1.5x.png') + ' 1.5x, ' + 
-                convertPath('/assets/introduction-hero/introduction-hero-people1-m@2x.png')  + ' 2x'"
-                    media="(min-width: 0px)" alt="categoryInfo.name">
-                <img class="sailor_investigator-compare d-none d-sm-block"
-                    [src]="convertPath('/assets/introduction-hero/introduction-hero-people2-m@2x.png')" [srcset]="
-                convertPath('/assets/introduction-hero/introduction-hero-people2-m.png') + ' , ' + 
-                convertPath('/assets/introduction-hero/introduction-hero-people2-m@1.5x.png') + ' 1.5x, ' + 
-                convertPath('/assets/introduction-hero/introduction-hero-people2-m@2x.png')  + ' 2x'"
-                    media="(min-width: 0px)" alt="categoryInfo.name">
-                <img class="sailor_features d-none d-sm-block"
-                    [src]="convertPath('/assets/introduction-hero/introduction-hero-people3-m@2x.png')" [srcset]="
-                convertPath('/assets/introduction-hero/introduction-hero-people3-m.png') + ' , ' + 
-                convertPath('/assets/introduction-hero/introduction-hero-people3-m@1.5x.png') + ' 1.5x, ' + 
-                convertPath('/assets/introduction-hero/introduction-hero-people3-m@2x.png')  + ' 2x'"
-                    media="(min-width: 0px)" alt="categoryInfo.name">
-                <img class="sailor_categories d-none d-sm-block"
-                    [src]="convertPath('/assets/introduction-hero/introduction-hero-people4-m@2x.png')" [srcset]="
-                convertPath('/assets/introduction-hero/introduction-hero-people4-m.png') + ' , ' + 
-                convertPath('/assets/introduction-hero/introduction-hero-people4-m@1.5x.png') + ' 1.5x, ' + 
-                convertPath('/assets/introduction-hero/introduction-hero-people4-m@2x.png')  + ' 2x'"
-                    media="(min-width: 0px)" alt="categoryInfo.name">
-                <img class="sailor_suitable-investigator d-none d-sm-block"
-                    [src]="convertPath('/assets/introduction-hero/introduction-hero-people5-m@2x.png')" [srcset]="
-                convertPath('/assets/introduction-hero/introduction-hero-people5-m.png') + ' , ' + 
-                convertPath('/assets/introduction-hero/introduction-hero-people5-m@1.5x.png') + ' 1.5x, ' + 
-                convertPath('/assets/introduction-hero/introduction-hero-people5-m@2x.png')  + ' 2x'"
-                    media="(min-width: 0px)" alt="categoryInfo.name">
-                <a href="#what-is" class="position-absolute question__what-is">
+                <img onclick="alert('click event occurred')" class="sailor_definition d-none d-sm-block" [src]="convertPath('/assets/introduction-hero/introduction-hero-people1-m@2x.png')" [srcset]="convertPath('/assets/introduction-hero/introduction-hero-people1-m.png') + ' , ' + convertPath('/assets/introduction-hero/introduction-hero-people1-m@1.5x.png') + ' 1.5x, ' + convertPath('/assets/introduction-hero/introduction-hero-people1-m@2x.png')  + ' 2x'" media="(min-width: 0px)" alt="categoryInfo.name">
+                <img class="sailor_comparison d-none d-sm-block" [src]="convertPath('/assets/introduction-hero/introduction-hero-people2-m@2x.png')" [srcset]="convertPath('/assets/introduction-hero/introduction-hero-people2-m.png') + ' , ' + convertPath('/assets/introduction-hero/introduction-hero-people2-m@1.5x.png') + ' 1.5x, ' + convertPath('/assets/introduction-hero/introduction-hero-people2-m@2x.png')  + ' 2x'" media="(min-width: 0px)" alt="categoryInfo.name">
+                <img class="sailor_benefit d-none d-sm-block" [src]="convertPath('/assets/introduction-hero/introduction-hero-people3-m@2x.png')" [srcset]="convertPath('/assets/introduction-hero/introduction-hero-people3-m.png') + ' , ' + convertPath('/assets/introduction-hero/introduction-hero-people3-m@1.5x.png') + ' 1.5x, ' + convertPath('/assets/introduction-hero/introduction-hero-people3-m@2x.png')  + ' 2x'" media="(min-width: 0px)" alt="categoryInfo.name">
+                <img class="sailor_suitable d-none d-sm-block" [src]="convertPath('/assets/introduction-hero/introduction-hero-people4-m@2x.png')" [srcset]="convertPath('/assets/introduction-hero/introduction-hero-people4-m.png') + ' , ' + convertPath('/assets/introduction-hero/introduction-hero-people4-m@1.5x.png') + ' 1.5x, ' + convertPath('/assets/introduction-hero/introduction-hero-people4-m@2x.png')  + ' 2x'" media="(min-width: 0px)" alt="categoryInfo.name">
+                <img class="sailor_categories d-none d-sm-block" [src]="convertPath('/assets/introduction-hero/introduction-hero-people5-m@2x.png')" [srcset]="convertPath('/assets/introduction-hero/introduction-hero-people5-m.png') + ' , ' + convertPath('/assets/introduction-hero/introduction-hero-people5-m@1.5x.png') + ' 1.5x, ' + convertPath('/assets/introduction-hero/introduction-hero-people5-m@2x.png')  + ' 2x'" media="(min-width: 0px)" alt="categoryInfo.name">
+                <a href="#definition" class="link_definition">
                     <div class="question-card d-flex p-3 flex-column">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -273,7 +164,7 @@
                     </div>
                 </a>
 
-                <a href="#investigator-compare" class="position-absolute question__investigator-compare">
+                <a href="#comparison" class="link_comparison">
                     <div class="question-card d-flex p-3 flex-column">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -290,7 +181,7 @@
                     </div>
                 </a>
 
-                <a href="#features" class="position-absolute question__features">
+                <a href="#benefit" class="link_benefit">
                     <div class="question-card d-flex p-3 flex-column">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -307,7 +198,7 @@
                     </div>
                 </a>
 
-                <a href="#categories" class="position-absolute question__categories">
+                <a href="#categories" class="link_categories">
                     <div class="question-card d-flex p-3 flex-column">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -324,7 +215,7 @@
                     </div>
                 </a>
 
-                <a href="#suitable-investigator" class="position-absolute question__suitable-investigator">
+                <a href="#suitable" class="link_suitable">
                     <div class="question-card d-flex p-3 flex-column">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -343,7 +234,7 @@
             </div>
         </section>
 
-        <section id="suitable-investigator" class="suitable-investigator bg_gray">
+        <section id="suitable" class="suitable bg_gray">
             <div class="container d-flex align-items-start w-75 px-5" data-aos="fade-up">
                 <div class="icon-card p-5 mx-5">
                     <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -360,7 +251,7 @@
                 </div>
             </div>
         </section>
-        <section id="what-is" class="suitable-investigator bg_gray">
+        <section id="definition" class="definition bg_gray">
             <div class="container d-flex align-items-start w-75 px-5">
                 <div class="d-flex flex-column px-5 mx-5 ms-0">
                     <h2 class="title pb-4 text-end">何謂策略性投資人?</h2>
@@ -389,7 +280,7 @@
                 </div>
             </div>
         </section>
-        <section id="investigator-compare" class="investigator-compare bg_gray">
+        <section id="comparison" class="comparison bg_gray">
             <div class="container align-items-center d-flex flex-column">
                 <div class="d-flex w-75 p-4 mt-4 text-center justify-content-end align-items-baseline">
                     <h1 class="title col-4 strategic-text"><strong>策略性</strong>投資人</h1>
@@ -446,15 +337,15 @@
                 </div>
             </div>
         </section>
-        <section id="features" class="features">
+        <section id="benefit" class="benefit">
             <div class="container">
                 <div class="row m-5 align-items-center">
                     <img class="illustration col m-5"
-                        [src]="convertPath('/assets/introduction-features/—Pngtree—hand drawn business men and_4999457 1.png')">
+                        [src]="convertPath('/assets/introduction-benefit/—Pngtree—hand drawn business men and_4999457 1.png')">
                     <div class="col d-flex flex-column px-3">
                         <div class="d-flex align-items-center justify-content-center mb-4">
                             <img class="feature-number align-self-center"
-                                [src]="convertPath('/assets/introduction-features/chat-bubble.png')">
+                                [src]="convertPath('/assets/introduction-benefit/chat-bubble.png')">
                             <h1 class="align-self-center text-white">1</h1>
                         </div>
                         <h2 class="title">產業內的技術與生產資源</h2>
@@ -466,7 +357,7 @@
                     <div class="col d-flex flex-column px-3">
                         <div class="d-flex align-items-center justify-content-center mb-4">
                             <img class="feature-number align-self-center"
-                                [src]="convertPath('/assets/introduction-features/chat-bubble.png')">
+                                [src]="convertPath('/assets/introduction-benefit/chat-bubble.png')">
                             <h1 class="align-self-center text-white">2</h1>
                         </div>
                         <h2 class="title">供應鏈的系統協助</h2>
@@ -474,15 +365,15 @@
                         </p>
                     </div>
                     <img class="illustration col m-5"
-                        [src]="convertPath('/assets/introduction-features/—Pngtree—cartoon teamwork puzzle decryption illustration_4978783 1.png')">
+                        [src]="convertPath('/assets/introduction-benefit/—Pngtree—cartoon teamwork puzzle decryption illustration_4978783 1.png')">
                 </div>
                 <div class="row m-5 align-items-center">
                     <img class="illustration col m-5"
-                        [src]="convertPath('/assets/introduction-features/策略2_工作區域 1 1.png')">
+                        [src]="convertPath('/assets/introduction-benefit/策略2_工作區域 1 1.png')">
                     <div class="col d-flex flex-column px-3">
                         <div class="d-flex align-items-center justify-content-center mb-4">
                             <img class="feature-number align-self-center"
-                                [src]="convertPath('/assets/introduction-features/chat-bubble.png')">
+                                [src]="convertPath('/assets/introduction-benefit/chat-bubble.png')">
                             <h1 class="align-self-center text-white">3</h1>
                         </div>
                         <h2 class="title">銷售與通路的整合</h2>
@@ -494,7 +385,7 @@
                     <div class="col d-flex flex-column px-3">
                         <div class="d-flex align-items-center justify-content-center mb-4">
                             <img class="feature-number align-self-center"
-                                [src]="convertPath('/assets/introduction-features/chat-bubble.png')">
+                                [src]="convertPath('/assets/introduction-benefit/chat-bubble.png')">
                             <h1 class="align-self-center text-white">4</h1>
                         </div>
                         <h2 class="title">可能是未來的併購者</h2>
@@ -502,7 +393,7 @@
                         </p>
                     </div>
                     <img class="illustration col m-5"
-                        [src]="convertPath('/assets/introduction-features/策略_工作區域 1 1.png')">
+                        [src]="convertPath('/assets/introduction-benefit/策略_工作區域 1 1.png')">
                 </div>
             </div>
         </section>
