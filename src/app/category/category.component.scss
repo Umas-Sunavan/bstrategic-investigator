@@ -117,14 +117,6 @@ $theme-color:#00779F;
   font-size: 0.75rem;
 }
 
-@mixin card {
-  background-color: #FFF;
-  border-radius: 10px;
-  box-shadow: 2px 2px 25px rgb(0 128 171 / 16%);
-  transition: -webkit-transform .1s ease-in;
-  transition: transform .1s ease-in;
-}
-
 @mixin giant-text {
   font-size: 4rem;
 }
@@ -151,8 +143,8 @@ $theme-color:#00779F;
 section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
   color: $theme-color;
 }
 
@@ -179,99 +171,88 @@ section {
   }
 }
 
+.float-card {
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 2px 2px 25px rgb(0 128 171 / 16%);
+  transition: -webkit-transform .1s ease-in;
+  transition: transform .1s ease-in;
+}
+
 // sections
 
 .hero {
-  &__text {
 
-    >.title {
-      font-weight: bold;
-    }
+  >.title {
+    font-weight: bold;
+  }
 
-    >.description {
-      @include secondary-text;
-    }
+  >.description {
+    @include secondary-text;
   }
 
   img {
-      max-height: 80vh;
-      object-fit: contain;
-    }
+    max-height: 80vh;
+    object-fit: contain;
+  }
 }
 
 .invstigators {
-  >.list {
-    >.item {
-      img {
-        //   Logo比例不一遂統一高度
-        height: 300px;
-        width: 100%;
-        object-fit: contain;
-        background-color: #f3f3f3;
-        padding: 20px;
-        position: relative;
-        bottom: -40px;
-        z-index: -1;
-        border-radius: 12px;
+  >.list>.item {
+    img {
+      //   Logo比例不一遂統一高度
+      height: 300px;
+      width: 100%;
+      object-fit: contain;
+      background-color: #f3f3f3;
+      padding: 20px;
+      position: relative;
+      bottom: -40px;
+      z-index: -1;
+      border-radius: 12px;
+    }
+
+    .float-card {
+
+      .quote-sign {
+        width: fit-content;
       }
 
-      .motto-card {
-        @include card;
-
-        .quote-sign {
-          width: fit-content;
-        }
-
-        .motto {
-          @include primary-section-title;
-        }
+      .motto {
+        @include primary-section-title;
       }
 
-      .intro-card {
-        @include card;
+      .title {
+        @include secondary-section-title;
+        font-weight: bold;
+      }
 
-        .title {
-          @include secondary-section-title;
-          font-weight: bold;
-        }
+      .award {
+        @include primary-text;
+      }
 
-        .award {
-          @include primary-text;
-        }
-
-        .company {
-          @include secondary-text;
-        }
+      .company {
+        @include secondary-text;
       }
     }
   }
 }
 
 .operation-flow {
-
-  .image-card {
-    @include card;
-  }
-
-  .title {
-    @include primary-section-title;
-    font-weight: bold;
-  }
-
   .description {
     @include secondary-text;
     height: 200px;
   }
+
+  .step>.title {
+    @include primary-section-title;
+    font-weight: bold;
+  }
 }
 
-
 .qualification {
-  .icon-card {
-    @include card;
-  }
 
-  .text-card {
-    @include card;
+  .float-card {
     box-shadow: none;
 
     .qualification-header {
@@ -288,10 +269,6 @@ section {
 
 .boost-business {
 
-  .title {
-    @include article-title;
-  }
-
   .cta {
     color: white;
     background-color: #00779F;
@@ -299,15 +276,11 @@ section {
 }
 
 .any-question {
-  .email-card {
-    @include card;
+  .float-card {
     box-shadow: none;
   }
-
-  .title {
-    @include article-title;
-  }
 }
+
 .footer {
   small {
     @include secondary-text;
@@ -321,8 +294,37 @@ section {
     text-decoration: underline;
     @include primary-text;
   }
-  
+
   .relative-link-list {
     @include secondary-text;
   }
+}
+
+.pupup-bg {
+  top: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #18223aa6;
+  z-index: 10;
+
+  .pupup-window {
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .float-card>.title {
+      @include article-title;
+    }
+
+    .invest-details {
+      .title {
+        @include primary-section-title()
+      }
+    }
+  }
+
+
 }

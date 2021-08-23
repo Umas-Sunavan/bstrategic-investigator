@@ -119,7 +119,7 @@
 <div class="app__main cssanimation fadeIn">
     <section class="hero container" id="hero">
         <div class="d-flex align-items-center row">
-            <div class="hero__text col-4">
+            <div class="col-4">
                 <h1 class="title cssanimation leFadeIn sequence">{{categoryInfo.name}}</h1>
                 <p class="description mt-4" [innerHTML]="categoryInfo.description">
                 </p>
@@ -152,7 +152,7 @@
         <div class="list row">
             <div class="item col-6 p-3" *ngFor="let investigator of categoryInfo.investigators">
                 <img class="p-5" [src]="convertPath(investigator.imagePath)">
-                <div class="motto-card p-4 m-3">
+                <div class="float-card p-4 m-3">
                     <div class="quote-sign me-auto"><svg width="26" height="23" viewBox="0 0 26 23" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -167,7 +167,7 @@
                                 fill="#006F95" />
                         </svg></div>
                 </div>
-                <div class="intro-card px-4 py-3 m-3">
+                <div class="float-card px-4 py-3 m-3">
                     <p class="title m-0">{{investigator.name}}</p>
                     <p class="award m-0">{{investigator.award}}</p>
                     <p class="company m-0">{{investigator.title}}</p>
@@ -179,8 +179,8 @@
         <h1 class="title">運作流程</h1>
         <div class="row">
             <div class="col">
-                <div class="m-4">
-                    <div class="image-card w-100 p-5">
+                <div class="m-4 step">
+                    <div class="float-card w-100 p-5">
                         <img class="w-100" [src]="convertPath('/assets/operation-flow-icons/002-detective.svg')">
                     </div>
                     <div class="title pt-3">
@@ -190,8 +190,8 @@
                         依據業者申請的組別，由工作小組確認是否符合資格，資料是否齊全，若有需要則會通知業者補件。
                     </div>
                 </div>
-                <div class="m-4">
-                    <div class="image-card p-5">
+                <div class="m-4 step">
+                    <div class="float-card p-5">
                         <img class="w-100" [src]="convertPath('/assets/operation-flow-icons/006-building.svg')">
                     </div>
                     <div class="title pt-3">
@@ -201,8 +201,8 @@
                         召集人指派產業導師與工作小組一起進行，訪視完後於召集人會議中提出報告，並由所屬組別召集人補充說明。
                     </div>
                 </div>
-                <div class="m-4">
-                    <div class="image-card p-5">
+                <div class="m-4 step">
+                    <div class="float-card p-5">
                         <img class="w-100" [src]="convertPath('/assets/operation-flow-icons/004-guarantee.svg')">
                     </div>
                     <div class="title pt-3">
@@ -212,8 +212,8 @@
                         邀請業者前來進行簡報，並由各組進行進一步討論是否投資。
                     </div>
                 </div>
-                <div class="m-4">
-                    <div class="image-card p-5">
+                <div class="m-4 step">
+                    <div class="float-card p-5">
                         <img class="w-100" [src]="convertPath('/assets/operation-flow-icons/001-invest.svg')">
                     </div>
                     <div class="title pt-3">
@@ -239,9 +239,9 @@
             </div>
             <div class="card-list card-list-right col">
 
-                <div class="m-4" style="margin-top: 100% !important;"></div>
-                <div class="m-4">
-                    <div class="image-card p-5">
+                <div class="m-4 step" style="margin-top: 100% !important;"></div>
+                <div class="m-4 step">
+                    <div class="float-card p-5">
                         <img class="w-100" [src]="convertPath('/assets/operation-flow-icons/005-consultation.svg')">
                     </div>
                     <div class="title pt-3">
@@ -256,8 +256,8 @@
                     </div>
                 </div>
 
-                <div class="m-4" style="margin-top: 90% !important;">
-                    <div class="image-card p-5">
+                <div class="m-4 step" style="margin-top: 90% !important;">
+                    <div class="float-card p-5">
                         <img class="w-100" [src]="convertPath('/assets/operation-flow-icons/007-authentication.svg')">
                     </div>
                     <div class="title pt-3">
@@ -268,8 +268,8 @@
                     </div>
                 </div>
 
-                <div class="m-4">
-                    <div class="image-card p-5">
+                <div class="m-4 step">
+                    <div class="float-card p-5">
                         <img class="w-100" [src]="convertPath('/assets/operation-flow-icons/008-chat.svg')">
                     </div>
                     <div class="title pt-3">
@@ -284,48 +284,48 @@
     </section>
     <section class="qualification bg_gray">
         <div class="container">
-            <h1 class="title">運作流程</h1>
+            <h1 class="title">我符合資格嗎？</h1>
             <div class="row">
                 <div class="col-3 p-4">
-                    <div class="icon-card m-2">
+                    <div class="float-card m-2">
                         <div class="image p-5">
                             <img class="w-100" [src]="convertPath('/assets/category-qualification-icons/不違法.png')">
                         </div>
                     </div>
-                    <div class="text-card p-4 mx-2 my-4">
+                    <div class="float-card p-4 mx-2 my-4">
                         <h2 class="qualification-header">不違法</h2>
                         <p class="m-0">最近三年有嚴重違反環境保護、勞工或食品安全衛生相關法律或身心障礙者權益保障法之相關規定且情節重大經各中央目的事業主管機關認定之情事。</p>
                     </div>
                 </div>
                 <div class="col-3 p-4">
-                    <div class="icon-card m-2">
+                    <div class="float-card m-2">
                         <div class="image p-5">
                             <img class="w-100" [src]="convertPath('/assets/category-qualification-icons/不違約.png')">
                         </div>
                     </div>
-                    <div class="text-card p-4 mx-2 my-4">
+                    <div class="float-card p-4 mx-2 my-4">
                         <h2 class="qualification-header">不違約</h2>
                         <p class="m-0">於5年內曾有執行政府計畫之重大違約紀錄者。有因執行政府計畫受停權處分，且其期間尚未屆滿情事。</p>
                     </div>
                 </div>
                 <div class="col-3 p-4">
-                    <div class="icon-card m-2">
+                    <div class="float-card m-2">
                         <div class="image p-5">
                             <img class="w-100" [src]="convertPath('/assets/category-qualification-icons/不欠稅.png')">
                         </div>
                     </div>
-                    <div class="text-card p-4 mx-2 my-4">
+                    <div class="float-card p-4 mx-2 my-4">
                         <h2 class="qualification-header">不欠稅</h2>
                         <p class="m-0">有因執行政府計畫受停權處分，且其期間尚未屆滿情事。</p>
                     </div>
                 </div>
                 <div class="col-3 p-4">
-                    <div class="icon-card m-2">
+                    <div class="float-card m-2">
                         <div class="image p-5">
                             <img class="w-100" [src]="convertPath('/assets/category-qualification-icons/非外資.png')">
                         </div>
                     </div>
-                    <div class="text-card p-4 mx-2 my-4">
+                    <div class="float-card p-4 mx-2 my-4">
                         <h2 class="qualification-header">非外資</h2>
                         <p class="m-0">外國營利事業在台設立之分公司。境外公司持有申請公司股份達50%以上(含)者。</p>
                     </div>
@@ -334,14 +334,14 @@
             <h2 class="subtitle">該準備哪些文件？</h2>
             <div class="row">
                 <div class="col-4 p-4">
-                    <div class="text-card p-4">
+                    <div class="float-card p-4">
                         <h3 class="application-number">1</h3>
                         <h2 class="qualification-header">完整的會員資料</h2>
                         <p class="m-0">填寫完整的會員資料</p>
                     </div>
                 </div>
                 <div class="col-4 p-4">
-                    <div class="text-card p-4">
+                    <div class="float-card p-4">
                         <h3 class="application-number">2</h3>
                         <h2 class="qualification-header">公司登記</h2>
                         <p class="m-0">檢附公司登記基本資料</p>
@@ -349,7 +349,7 @@
                 </div>
 
                 <div class="col-4 p-4">
-                    <div class="text-card p-4">
+                    <div class="float-card p-4">
                         <h3 class="application-number">3</h3>
                         <h2 class="qualification-header">提案簡報</h2>
                         <p class="m-0">檢附此次提案簡報</p>
@@ -381,7 +381,7 @@
                 <div class="col-6 p-5 d-flex flex-column align-items-end">
                     <h1 class="text-end title mb-3">仍有不清楚！？</h1>
                     <p class="text-end my-2 mb-5">直接來信獲得解答</p>
-                    <div class="email-card p-5">
+                    <div class="float-card p-5">
                         <h1 class="title">question@tier.org.tw</h1>
                     </div>
                     <a class="d-flex align-self-stretch justify-content-end mt-5">
@@ -438,4 +438,56 @@
             </div>
         </div>
     </div>
+</div>
+<div class="pupup-bg">
+    <div class="pupup-window d-flex">
+        <div>
+            <div class="float-card px-4 py-3 m-3">
+                <p class="title m-0">王年清</p>
+                <p class="award m-0">第38屆青年創業楷模得獎人</p>
+                <p class="company m-0">迅得機械(股)公司/總經理</p>
+            </div>
+            <div class="float-card p-4 m-3">
+                <div class="quote-sign me-auto"><svg width="26" height="23" viewBox="0 0 26 23" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.511875 14.2812C0.511875 10.1562 1.07438 7.1875 2.19938 5.375C3.38688 3.5625 5.38688 1.96875 8.19938 0.59375L11.6681 5.1875C9.41813 6.375 8.04313 7.40625 7.54313 8.28125C7.10563 9.09375 6.88688 10.125 6.88688 11.375H11.7619V22.625H0.511875V14.2812ZM14.1056 14.2812C14.1056 10.1562 14.6681 7.1875 15.7931 5.375C16.9181 3.5625 18.9181 1.96875 21.7931 0.59375L25.1681 5.1875C22.9806 6.375 21.6369 7.40625 21.1369 8.28125C20.6369 9.09375 20.3869 10.125 20.3869 11.375H25.2619V22.625H14.1056V14.2812Z"
+                            fill="#006F95" />
+                    </svg></div>
+                <p class="motto col text-center m-0">專注於模組化的設計以達到客戶需求與創新趨勢。
+                </p>
+                <div class="quote-sign ms-auto"><svg width="26" height="23" viewBox="0 0 26 23" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M25.7166 8.71875C25.7166 12.8437 25.1541 15.8125 24.0291 17.625C22.8416 19.4375 20.8416 21.0313 18.0291 22.4062L14.5604 17.8125C16.8104 16.625 18.1854 15.5938 18.6854 14.7187C19.1229 13.9063 19.3416 12.875 19.3416 11.625H14.4666L14.4666 0.375L25.7166 0.375L25.7166 8.71875ZM12.1229 8.71875C12.1229 12.8437 11.5604 15.8125 10.4354 17.625C9.31039 19.4375 7.31039 21.0312 4.43539 22.4062L1.06039 17.8125C3.24789 16.625 4.59164 15.5938 5.09164 14.7187C5.59164 13.9062 5.84164 12.875 5.84164 11.625H0.96664V0.375H12.1229V8.71875Z"
+                            fill="#006F95" />
+                    </svg></div>
+            </div>
+        </div>
+        <div class="invest-details">
+            <div class="px-4 py-3 m-3">
+                <p class="title m-0">可投資規模</p>
+                <p class="m-0">1000萬-3000萬</p>
+            </div>
+            <div class="px-4 py-3 m-3">
+                <p class="title m-0">可提供協助</p>
+                <p class="m-0">
+                    <li>LED相關模組技術</li>
+                    <li>顯示器應用發展</li>
+                    <li>IOT加值服務</li>
+                </p>
+            </div>
+            <div class="px-4 py-3 m-3">
+                <p class="title m-0">王年清</p>
+                <p class="m-0">第38屆青年創業楷模得獎人</p>
+            </div>
+            <div class="px-4 py-3 m-3">
+                <p class="title m-0">王年清</p>
+                <p class="m-0">第38屆青年創業楷模得獎人</p>
+            </div>
+        </div>
+
+
+    </div>
+
 </div>
