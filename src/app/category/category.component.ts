@@ -42,6 +42,7 @@ export class CategoryComponent implements OnInit {
     private activatedRoute: ActivatedRoute
   ) { }
 
+  isPopupShow = true
 
   categoryInfo: CategoryInfo = {
     id: "",
@@ -64,6 +65,8 @@ export class CategoryComponent implements OnInit {
   }
 
   convertPath = (relavieLink: string) => this.location.prepareExternalUrl(relavieLink)
+
+  togglePopup = () => {this.isPopupShow = !this.isPopupShow}
 
 }
 // ic

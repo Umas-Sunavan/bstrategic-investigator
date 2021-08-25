@@ -150,9 +150,11 @@
     <section id="invstigators" class="invstigators container">
         <h1 class="title">本組投資召集人</h1>
         <div class="list row">
-            <div class="item col-6 p-3" *ngFor="let investigator of categoryInfo.investigators">
-                <img class="p-5" [src]="convertPath(investigator.imagePath)">
-                <div class="float-card p-4 m-3">
+            <div class="border-0 item col-6 p-3" *ngFor="let investigator of categoryInfo.investigators">
+                <button class="border-0 m-3 w-100 bg-transparent shadow-none" (click)="togglePopup()">
+                    <img class="p-5" [src]="convertPath(investigator.imagePath)">
+                </button>
+                <button class="float-card p-4 m-3 w-100 border-0 bg-white" (click)="togglePopup()">
                     <div class="quote-sign me-auto"><svg width="26" height="23" viewBox="0 0 26 23" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -166,12 +168,12 @@
                                 d="M25.7166 8.71875C25.7166 12.8437 25.1541 15.8125 24.0291 17.625C22.8416 19.4375 20.8416 21.0313 18.0291 22.4062L14.5604 17.8125C16.8104 16.625 18.1854 15.5938 18.6854 14.7187C19.1229 13.9063 19.3416 12.875 19.3416 11.625H14.4666L14.4666 0.375L25.7166 0.375L25.7166 8.71875ZM12.1229 8.71875C12.1229 12.8437 11.5604 15.8125 10.4354 17.625C9.31039 19.4375 7.31039 21.0312 4.43539 22.4062L1.06039 17.8125C3.24789 16.625 4.59164 15.5938 5.09164 14.7187C5.59164 13.9062 5.84164 12.875 5.84164 11.625H0.96664V0.375H12.1229V8.71875Z"
                                 fill="#006F95" />
                         </svg></div>
-                </div>
-                <div class="float-card px-4 py-3 m-3">
+                </button>
+                <button class="float-card px-4 py-3 m-3 w-100 border-0 text-end  bg-white" (click)="togglePopup()">
                     <p class="title m-0">{{investigator.name}}</p>
                     <p class="award m-0">{{investigator.award}}</p>
                     <p class="company m-0">{{investigator.title}}</p>
-                </div>
+                </button>
             </div>
         </div>
     </section>
@@ -439,10 +441,11 @@
         </div>
     </div>
 </div>
-<div class="pupup-bg">
-    <div class="pupup-window d-flex">
-        <div>
-            <div class="float-card px-4 py-3 m-3">
+<div class="pupup-bg d-flex justify-content-center align-items-center" [ngClass]="{'d-none':!isPopupShow}">
+    <div class="pupup-window d-flex row p-4">
+        <div class="col-6">
+            <div class="float-card p-5 m-3">
+                <img class="p-0" [src]="convertPath('/assets/logos/9.創新服務_雲端/41.png')">
                 <p class="title m-0">王年清</p>
                 <p class="award m-0">第38屆青年創業楷模得獎人</p>
                 <p class="company m-0">迅得機械(股)公司/總經理</p>
@@ -464,12 +467,21 @@
                     </svg></div>
             </div>
         </div>
-        <div class="invest-details">
-            <div class="px-4 py-3 m-3">
+        <div class="invest-details col-6">
+            <button (click)="togglePopup()" class="bg-white d-flex ms-auto p-3 m-3 border-0">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#006F95" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="#006F95" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="p-3">
                 <p class="title m-0">可投資規模</p>
                 <p class="m-0">1000萬-3000萬</p>
             </div>
-            <div class="px-4 py-3 m-3">
+            <div class="p-3">
                 <p class="title m-0">可提供協助</p>
                 <p class="m-0">
                     <li>LED相關模組技術</li>
@@ -477,17 +489,17 @@
                     <li>IOT加值服務</li>
                 </p>
             </div>
-            <div class="px-4 py-3 m-3">
-                <p class="title m-0">王年清</p>
-                <p class="m-0">第38屆青年創業楷模得獎人</p>
+            <div class="p-3">
+                <p class="title m-0">經歷/偏好</p>
+                <p class="m-0">為專注於電源管理與光電應用之開發與設計，致力於混合訊號IC設計，因此希望有更多創新創意加入，發展更多可能性。</p>
             </div>
-            <div class="px-4 py-3 m-3">
-                <p class="title m-0">王年清</p>
-                <p class="m-0">第38屆青年創業楷模得獎人</p>
+            <div class="p-3">
+                <p class="title m-0">感興趣的產業別</p>
+                <p class="m-0">
+                    <li>IC半導體/印刷電路板</li>
+                    <li>電子零售/IOT</li>
+                </p>
             </div>
         </div>
-
-
     </div>
-
 </div>

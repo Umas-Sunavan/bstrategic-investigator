@@ -179,6 +179,10 @@ section {
   transition: transform .1s ease-in;
 }
 
+.quote-sign {
+  width: fit-content;
+}
+
 // sections
 
 .hero {
@@ -198,6 +202,7 @@ section {
 }
 
 .invstigators {
+
   >.list>.item {
     img {
       //   Logo比例不一遂統一高度
@@ -207,16 +212,13 @@ section {
       background-color: #f3f3f3;
       padding: 20px;
       position: relative;
-      bottom: -40px;
+      bottom: -70px;
       z-index: -1;
       border-radius: 12px;
     }
 
     .float-card {
-
-      .quote-sign {
-        width: fit-content;
-      }
+      color: #00779F;
 
       .motto {
         @include primary-section-title;
@@ -233,6 +235,13 @@ section {
 
       .company {
         @include secondary-text;
+      }
+    }
+    button {
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms;
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 2px 16px 25px rgb(0 128 171 / 10%);
       }
     }
   }
@@ -309,20 +318,31 @@ section {
   z-index: 10;
 
   .pupup-window {
+    color: #00779F;
     position: absolute;
     background-color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 50%;
+    max-width: 100%;
+    border-radius: 10px;
 
     .float-card>.title {
       @include article-title;
+      font-weight: bold;
     }
 
     .invest-details {
       .title {
         @include primary-section-title()
       }
+    }
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+
+    li {
+      list-style: square;
     }
   }
 
