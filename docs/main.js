@@ -1034,7 +1034,7 @@ class CategoryComponent {
     constructor(location, activatedRoute) {
         this.location = location;
         this.activatedRoute = activatedRoute;
-        this.isPopupShow = true;
+        this.isPopupShow = false;
         this.categoryInfo = {
             id: "",
             name: "",

@@ -42,7 +42,7 @@ export class CategoryComponent implements OnInit {
     private activatedRoute: ActivatedRoute
   ) { }
 
-  isPopupShow = true
+  isPopupShow = false
 
   categoryInfo: CategoryInfo = {
     id: "",
