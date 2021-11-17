@@ -1,0 +1,45 @@
+{
+  "id": "automobile",  
+      "name": "汽車/智慧交通",
+      "description": "汽車產業的上游主要為相關零組件製造商，中游為整車中心大廠、組裝、修理及技術服務，下游則為品牌廠商與銷售服務據點。產業組成員多半聚集在產業鏈的中上游，藉由優異的技術開發及生產能力，打入國際大廠供應鏈，並且不斷地往ODM的方向發展，開創在市場上的差異性。車聯網、電動車及智慧交通等成為產業熱門的發展趨勢，期盼結合台灣優異的電子科技優勢，成為產業轉型的引領者。",
+      "simplifiedHeroImagePath": "/assets/category-icons/simplified/automobile.png",
+      "complexHeroImagePath": "/assets/category-icons/complex/automobile.png",
+      "investigators": [
+        {
+          "quote":"眼界太狹窄，就無法看到外面的世界究竟有多寬廣。",
+          "name":"陳錫蒼",
+          "award":"第25屆青年創業楷模得獎人",
+          "title":"怡利電子集團/總裁",
+          "imagePath":"/assets/logos/4.汽車_智慧交通/16.png",
+          "link":"www.e-lead.com.tw"
+        },{
+          "quote":"持續追求領先、積極創新，並落實精益求精、追求卓越、尊重產品、顧客滿意的品質政策，引導企業邁向永續發展。",
+          "name":"黃成業",
+          "award":"第37屆青年創業楷模得獎人",
+          "title":"合智工業(股)公司/董事長",
+          "imagePath":"/assets/logos/4.汽車_智慧交通/17.png",
+          "link":"http://www.hijoin.com.tw"
+        },{
+          "quote":"全球服務，車用最佳散熱解決方案。20年以上專業研發與生產能力，提供最佳熱效能、低熱阻、輕量化的散熱片，已超過數十種車款量產經驗，給您最值得信賴的高品質服務。",
+          "name":"林啟聖",
+          "award":"第40屆青年創業楷模得獎人",
+          "title":"艾姆勒車電(股)公司/董事長",
+          "imagePath":"/assets/logos/4.汽車_智慧交通/18.png",
+          "link":"www.amulaire.com"
+        },{
+          "quote":"Topower代表「頂級最好的產品」，用創新思緒研發且行銷優質產品才能獲利，彰顯至寶的願景：成為優質高獲利的公司，創新科技，領先全球。",
+          "name":"周青麟",
+          "award":"第29屆青年創業楷模得獎人",
+          "title":"至寶光電(股)公司/董事長",
+          "imagePath":"/assets/logos/4.汽車_智慧交通/19.png",
+          "link":"www.topower.com.tw"
+        },{
+          "quote":"超越群倫、精益求精，品質至上、研發創新。",
+          "name":"黃正忠",
+          "award":"第26屆青年創業楷模得獎人",
+          "title":"劍麟(股)公司/總經理",
+          "imagePath":"/assets/logos/4.汽車_智慧交通/20.png",
+          "link":"www.ironforce.com.tw"
+        }
+      ]
+    }

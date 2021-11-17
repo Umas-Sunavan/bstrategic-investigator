@@ -1,0 +1,45 @@
+{
+  "id": "chainstore",  
+      "name": "流通連鎖/文創",
+      "description": "近年電子商務之興起，為本組關注新創之重點。電子商務產業鏈可以區分為上游的支援服務業、中游的平台服務業以及下游的銷售服務業三個部分。上游的支援服務業涵蓋所有支持電子商務產業核心發展所需關聯業務，諸如物流倉儲、資訊系統建置、金流串接處理、資料分析處理以及行銷廣告等業務；中游的平台服務業則包括提供店點開設管理、交易撮(媒)合以及資訊聚合服務之業者；下游的銷售服務業則有自有產品(服務)銷售、一般零售以及票券銷售服務之業者。隨著自媒體的崛起，基於社群平台的社交購物已成為新的行銷購物場景，業者大量結合網紅、直播主、KOL進行產品銷售，促使社交購物大步向前發展；其次則是新技術的導入將更積極，諸如利用聊天機器人、ARVR技術或是提供個人化的服務等，均將逐步改變消費者的購物體驗；最後是因應Covid-19帶來的新常態，勢必將穩定帶動相關運輸、倉儲等基礎設施的投入增加，估計亦將驅動更多線下業者積極向線上發展。",
+      "simplifiedHeroImagePath": "/assets/category-icons/simplified/chainstore.png",
+      "complexHeroImagePath": "/assets/category-icons/complex/chainstore.png",
+      "investigators": [
+        {
+          "quote":"國內戶外休閒生活的第一品牌。",
+          "name":"程鯤",
+          "award":"第33屆青年創業楷模得獎人",
+          "title":"歐都納(股)公司/董事長",
+          "imagePath":"/assets/logos/6.流通連鎖_文創/26.png",
+          "link":"www.atunas.com.tw"
+        },{
+          "quote":"良好溝通、合法制度、創新求突破",
+          "name":"方淑宜",
+          "award":"第35屆青年創業楷模得獎人",
+          "title":"丹堤咖啡食品(股)公司/總經理",
+          "imagePath":"/assets/logos/6.流通連鎖_文創/27.png",
+          "link":"www.dante.com.tw"
+        },{
+          "quote":"讓每一個家庭都能享有最美好的居家環境。",
+          "name":"陳國都",
+          "award":"第31屆青年創業楷模得獎人",
+          "title":"台灣歐德傢俱(股)公司/董事長",
+          "imagePath":"/assets/logos/6.流通連鎖_文創/28.png",
+          "link":"www.order.com.tw"
+        },{
+          "quote":"洞見產業需求，運用軟硬體垂直整合技術，邀你掌握世界的每個可能。",
+          "name":"吳騰彥",
+          "award":"第38屆青年創業楷模得獎人",
+          "title":"微程式資訊股份有限公司/總經理",
+          "imagePath":"/assets/logos/6.流通連鎖_文創/29.png",
+          "link":"www.program.com.tw"
+        },{
+          "quote":"「創新、求變」是商場生存的不二法則",
+          "name":"周龍田",
+          "award":"第10屆青年創業楷模得獎人",
+          "title":"振喬有限公司/董事長",
+          "imagePath":"/assets/logos/6.流通連鎖_文創/30.png",
+          "link":"null"
+        }
+      ]
+    }

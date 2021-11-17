@@ -1,0 +1,45 @@
+{
+  "id": "network",  
+      "name": "通訊網路/5G",
+      "description": "本組含括通信網路及軟體服務兩大產業領域。通信網路產業為利用有線或無線傳輸或接受符號、信號、文字、影像、聲音與其他訊息，產業鏈上游為組成各類通訊終端之零組件供應商，下游則為各類終端應用產品之供應商。軟體服務業可區分為應用/系統軟體設計開發、系統整合服務、電子商務、資料處理服務、通路經銷等行業。隨著5G和AIOT技術進步，未來資通訊產業的軟硬整合將成趨勢。台灣是ICT產業供應鏈與製造業的重地，不管是高科技或是傳統產業的升級都需要引導軟體產業創新，結合硬體產業既有的優勢，讓台灣形成相當的產業規模。",
+      "simplifiedHeroImagePath": "/assets/category-icons/simplified/network.png",
+      "complexHeroImagePath": "/assets/category-icons/complex/network.png",
+      "investigators": [
+        {
+          "quote":"突破挑戰，促進經濟成長、社會人文進步與環境永續，持續創造企業永續價值。",
+          "name":"陳清港",
+          "award":"第24屆青年創業楷模得獎人",
+          "title":"普萊德科技(股)公司/董事長",
+          "imagePath":"/assets/logos/3.網路_5G/11.png",
+          "link":"www.planet.com.tw"
+        },{
+          "quote":"一步一腳印、創新求進。",
+          "name":"廖紫岑",
+          "award":"第37屆青年創業楷模得獎人",
+          "title":"台灣數位光訊科技(股)公司/執行長",
+          "imagePath":"/assets/logos/3.網路_5G/12.png",
+          "link":"https://www.topmso.com.tw/"
+        },{
+          "quote":"期許成為年輕女性的購物首頁， 以購物遊樂園為出發點，讓遊客、員工每天都能遇見新奇與快樂，也都在這找到久久的幸福感。",
+          "name":"陳昶任",
+          "award":"第39屆青年創業楷模得獎人",
+          "title":"耐德科技(股)公司/董事長",
+          "imagePath":"/assets/logos/3.網路_5G/13.png",
+          "link":"tw.shopping99.com/ph.shopping99.com"
+        },{
+          "quote":"提供更完整資訊服務，不管是在資訊浪潮的前浪還是後浪裡，采威永遠是最好的「Your E-Business Provider」。",
+          "name":"蕭哲君",
+          "award":"第41屆青年創業楷模得獎人",
+          "title":"采威國際資訊(股)公司/董事長",
+          "imagePath":"/assets/logos/3.網路_5G/14.png",
+          "link":"www.iscom.com.tw"
+        },{
+          "quote":"提供客戶超值完整的解決方案，以達成對客戶的完美承諾，實現本公司成為亞太地區最傑出的半導體通路代理商與'亞洲矽谷'的願景。",
+          "name":"蔡伯宜",
+          "award":"第24屆青年創業楷模得獎人",
+          "title":"亞矽科技(股)公司/董事長兼總經理",
+          "imagePath":"/assets/logos/3.網路_5G/15.png",
+          "link":"www.asec.com.tw"
+        }
+      ]
+    }

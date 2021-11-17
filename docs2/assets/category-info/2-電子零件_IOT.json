@@ -1,0 +1,45 @@
+{
+  "id": "e-retail",  
+      "name": "電子零件/IOT",
+      "description": "我國電子產品零組件產品廣泛，主要包含印刷電路板、被動元件、連接器、能源元件等。電子資訊產品發展趨勢由智慧手持裝置應用情境所主導，將由個人場域延伸至家庭及萬物聯網，衍生出新型態裝置(如穿戴式)與物聯網裝置的需求，帶動智慧電子、電路版產業鏈軟硬體創新技術需求。此外，由於物聯網不僅在於硬體開發，更重要的是解決方案，必須針對特定領域如車載、醫療照護、工廠、金融、物流、環保等進行設計，因此衍生出跨業整合與應用人才之需求。",
+      "simplifiedHeroImagePath": "/assets/category-icons/simplified/eRetail.png",
+      "complexHeroImagePath": "/assets/category-icons/complex/eRetail.png",
+      "investigators": [
+        {
+          "quote":"永續經營、人本關懷。",
+          "name":"廖本林",
+          "award":"第16屆青年創業楷模得獎人",
+          "title":"百容電子(股)公司/董事長",
+          "imagePath":"/assets/logos/2.電子零件_IOT/6.png",
+          "link":"www.ece.com.tw"
+        },{
+          "quote":"顧客滿意，技術領先。",
+          "name":"廖書尉",
+          "award":"第27屆青年創業楷模得獎人",
+          "title":"亞帝歐光電(股)公司/董事長",
+          "imagePath":"/assets/logos/2.電子零件_IOT/7.png",
+          "link":"www.adotek.com.tw"
+        },{
+          "quote":"創造一個舒適、環保、安全、多樣化的生活環境。／創新領先、行動持續、價值提升、服務為重。",
+          "name":"周添銘",
+          "award":"第30屆青年創業楷模得獎人",
+          "title":"大日科技(股)公司/董事長",
+          "imagePath":"/assets/logos/2.電子零件_IOT/8.png",
+          "link":"www.oncque.com.tw"
+        },{
+          "quote":"更靈活的彈性策略，在通路的本位上延伸出更無限寬廣的可能。",
+          "name":"林訓民",
+          "award":"第25屆青年創業楷模得獎人",
+          "title":"蜜望實企業(股)公司/董事長",
+          "imagePath":"/assets/logos/2.電子零件_IOT/9.png",
+          "link":"www.threehhh.com.tw"
+        },{
+          "quote":"健康精品工藝的領航者！(為了讓人們擁有更舒適安心的生活品質，我們以家為出發點，提供人們對於健康體驗的全新想像)",
+          "name":"謝文旭",
+          "award":"第28屆青年創業楷模得獎人",
+          "title":"光昱金屬有限公司/董事長",
+          "imagePath":"/assets/logos/2.電子零件_IOT/10.png",
+          "link":"www.masse.com.tw"
+        }
+      ]
+    }

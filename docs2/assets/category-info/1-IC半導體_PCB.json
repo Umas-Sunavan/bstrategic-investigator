@@ -1,0 +1,45 @@
+{
+  "id": "ic",    
+  "name": "IC半導體/PCB",
+      "description": "半導體產業鏈上游為IP設計及IC設計業，中游為IC製造、晶圓製造、相關生產製程檢測設備、光罩、化學品等業，下游為IC封裝測試、相關生產製程檢測設備、零組件（如基板、導線架）、IC模組、IC通路等業。台灣擁有全球最完整的半導體產業聚落及專業分工，隨5G、AI人工智慧、高效能運算與物聯網等新興應用陸續推展，該產業之創新能量亦被受重視。",
+      "simplifiedHeroImagePath": "/assets/category-icons/simplified/ic.png",
+      "complexHeroImagePath": "/assets/category-icons/complex/ic.png",
+      "investigators": [
+        {
+          "quote":"結合創新技術與對LED驅動晶片設計的熱情，成為顯示屏與照明產業中的領導品牌。",
+          "name":"楊立昌",
+          "award":"第31屆青年創業楷模得獎人",
+          "title":"聚積科技(股)公司董事長",
+          "imagePath":"/assets/logos/1.IC半導體_PCB/1.png",
+          "link":"www.mblock.com.tw"
+        },{
+          "quote":"宜特的經營使命始終來自於企業之永續經營。",
+          "name":"余維斌",
+          "award":"第31屆青年創業楷模得獎人",
+          "title":"宜特科技(股)公司/董事長",
+          "imagePath":"/assets/logos/1.IC半導體_PCB/2.png",
+          "link":"www.istgroup.com"
+        },{
+          "quote":"成功之前，必要有準備",
+          "name":"曾榮孟",
+          "award":"第21屆青年創業楷模得獎人",
+          "title":"希華晶體科技(股)公司/總經理",
+          "imagePath":"/assets/logos/1.IC半導體_PCB/3.png",
+          "link":"www.siward.com.tw"
+        },{
+          "quote":"致力客戶成功、股東滿意、員工開心、承擔企業社會責任-「榮神益人」",
+          "name":"吳元超",
+          "award":"第36屆青年創業楷模得獎人",
+          "title":"興普科技(股)公司/董事長",
+          "imagePath":"/assets/logos/1.IC半導體_PCB/4.png",
+          "link":"www.superpcb.com.tw"
+        },{
+          "quote":"致力於維持高標準的品質、獲得眾多合作夥伴的滿意。",
+          "name":"簡榮坤",
+          "award":"第36屆青年創業楷模得獎人",
+          "title":"邑昇實業(股)公司/董事長",
+          "imagePath":"/assets/logos/1.IC半導體_PCB/5.png",
+          "link":"www.eiso.com.tw"
+        }
+      ]
+    }
